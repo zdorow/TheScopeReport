@@ -1,5 +1,5 @@
 # DeviceGroupTool
-This is a java program that uses Jamf Pro API calls to collect information about device groups. Can be run on any computer that can access Jamf Pro from their web browser
+This is a java program that uses Jamf Pro API calls to collect information about device groups. It can be run on any computer that can access Jamf Pro from their web browser. It makes the text file inside the folder it was run in. 
 
 Requirements: JDK and JRE (Wrote in version 1.8)
 
