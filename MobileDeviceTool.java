@@ -1,9 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package mobiledevicetool;
+
+package devicegrouptool;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -43,7 +41,7 @@ import org.json.JSONObject;
  *
  * @author ZD
  */
-public class MobileDeviceTool extends Application {
+public class DeviceGroupTool extends Application {
         public static void main(String[] args)
     {
         launch(args);
@@ -279,9 +277,9 @@ EbooksCategoryButton.setSelected(false);
                     }
                 }
             }
-            else if (ProfilesCategoryButton.isSelected() && MobileGroupsButton.isSelected()){
+            else if (AppsCategoryButton.isSelected() && MobileGroupsButton.isSelected()){
                 try (BufferedWriter writer = new BufferedWriter(new FileWriter(timeStampPattern.format(java.time.LocalDateTime.now()) + "MobileProfiles.txt"))) {
-                    OutputMessage.setText( "Writing to file " + timeStampPattern.format(java.time.LocalDateTime.now()) + " MobileProfiles.txt");
+                    OutputMessage.setText( "Writing to file " + timeStampPattern.format(java.time.LocalDateTime.now()) + " MobileApps.txt");
                     JSONObject jsonPolicy = new JSONObject(api.get("mobiledeviceapplications"));
                     JSONArray jsonPolicyArray = jsonPolicy.getJSONArray("mobile_device_applications");
                     for(int i=0; i<jsonPolicyArray.length(); i++){
@@ -304,9 +302,9 @@ EbooksCategoryButton.setSelected(false);
                     }
                 }
             }
-            else if (AppsCategoryButton.isSelected() && MobileGroupsButton.isSelected()){
+            else if (ProfilesCategoryButton.isSelected() && MobileGroupsButton.isSelected()){
                 try (BufferedWriter writer = new BufferedWriter(new FileWriter(timeStampPattern.format(java.time.LocalDateTime.now()) + "MobileApps.txt"))) {
-                    OutputMessage.setText( "Writing to file " + timeStampPattern.format(java.time.LocalDateTime.now()) + " MobileApps.txt");
+                    OutputMessage.setText( "Writing to file " + timeStampPattern.format(java.time.LocalDateTime.now()) + " MobileProfiles.txt");
                     JSONObject jsonPolicy = new JSONObject(api.get("mobiledeviceconfigurationprofiles"));
                     JSONArray jsonPolicyArray = jsonPolicy.getJSONArray("configuration_profiles");
                     for(int i=0; i<jsonPolicyArray.length(); i++){
@@ -355,13 +353,15 @@ EbooksCategoryButton.setSelected(false);
                         writer.newLine();
                         writer.flush();
                     }
+                    
+                    
                 }
             }
             else
                 OutputMessage.setText("Please Select a Type of Device Group and a Category");
         } catch (JssApiException | JSONException | IOException ex) {
             OutputMessage.setText( "URL, username and password not accepted.");
-            Logger.getLogger(MobileDeviceTool.class.getName()).log(Level.SEVERE, null, ex);           
+            Logger.getLogger(DeviceGroupTool.class.getName()).log(Level.SEVERE, null, ex);           
         }
     });
 }
