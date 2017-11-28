@@ -171,6 +171,7 @@ EbooksCategoryButton.setSelected(false);
             String username = JamfProUsernameInput.getText();
             String password = JamfProPasswordInput.getText();
             //String devices = "mobiledevicegroups";
+
             
             api = new JSSapiCalls(url, username, password, JSSapiCalls.FORMAT.JSON, JSSapiCalls.FORMAT.JSON);
             List<String> lines = Arrays.asList(url, username);
@@ -191,10 +192,16 @@ EbooksCategoryButton.setSelected(false);
                         JSONObject jsonScope = new JSONObject(api.get("policies/id/" + id + "/subset/scope"));
                         JSONObject scopeObject = jsonScope.getJSONObject("policy");
                         JSONObject scope = scopeObject.getJSONObject("scope");
+//                        Object ALLcompscope = scope.get("all_computers").toString().replace("[{", "").replace("}]", "").replace("\"", "");
+//                        Object ALLuserscope = scope.get("limit_to_users").toString().replace("[{", "").replace("}]", "").replace("\"", "");
                         Object compscope = scope.get("computer_groups").toString().replace("[{", "").replace("}]", "").replace("\"", "");
                         writer.newLine();
+                        
+//                        writer.write((String) ALLcompscope);
+//                        writer.newLine();
                         writer.write((String) compscope);
-                        writer.newLine();
+//                        writer.newLine();
+//                        writer.write((String) ALLuserscope);
                         writer.write("--------------------------------------------");
                         writer.newLine();
                         writer.flush();
@@ -213,6 +220,7 @@ EbooksCategoryButton.setSelected(false);
                         System.out.println(name);
                         writer.write("Application: " + name );
                         writer.newLine();
+                        
                         JSONObject jsonScope = new JSONObject(api.get("macapplications/id/" + id + "/subset/scope"));
                         JSONObject scopeObject = jsonScope.getJSONObject("mac_application");
                         JSONObject scope = scopeObject.getJSONObject("scope");
@@ -242,7 +250,7 @@ EbooksCategoryButton.setSelected(false);
                         JSONObject jsonScope = new JSONObject(api.get("osxconfigurationprofiles/id/" + id + "/subset/scope"));
                         JSONObject scopeObject = jsonScope.getJSONObject("os_x_configuration_profile");
                         JSONObject scope = scopeObject.getJSONObject("scope");
-                        Object compscope = scope.get("computer_groups").toString().replace("[{", "").replace("}]", "").replace("\"", "");
+                        Object compscope = scope.get("computer_groups").toString().replace("[{", "").replace("}]", "").replace("\"", "").replace("}", "").replace("{", "");
                         writer.newLine();
                         writer.write("Group: " + (String) compscope);
                         writer.newLine();
@@ -254,7 +262,7 @@ EbooksCategoryButton.setSelected(false);
             }
             else if (EbooksCategoryButton.isSelected() && ComputerGroupsButton.isSelected()){
                 try (BufferedWriter writer = new BufferedWriter(new FileWriter(timeStampPattern.format(java.time.LocalDateTime.now()) + "CompEbook.txt"))) {
-                    OutputMessage.setText( "Writing to file " + timeStampPattern.format(java.time.LocalDateTime.now()) + " MobileProfiles.txt");
+                    OutputMessage.setText( "Writing to file " + timeStampPattern.format(java.time.LocalDateTime.now()) + " CompEbook.txt");
                     JSONObject jsonPolicy = new JSONObject(api.get("ebooks"));
                     JSONArray jsonPolicyArray = jsonPolicy.getJSONArray("ebooks");
                     for(int i=0; i<jsonPolicyArray.length(); i++){
@@ -267,32 +275,7 @@ EbooksCategoryButton.setSelected(false);
                         JSONObject jsonScope = new JSONObject(api.get("ebooks/id/" + id + "/subset/scope"));
                         JSONObject scopeObject = jsonScope.getJSONObject("ebook");
                         JSONObject scope = scopeObject.getJSONObject("scope");
-                        Object compscope = scope.get("computer_groups").toString().replace("[{", "").replace("}]", "").replace("\"", "");
-                        writer.newLine();
-                        writer.write("Group: " + (String) compscope);
-                        writer.newLine();
-                        writer.write("--------------------------------------------");
-                        writer.newLine();
-                        writer.flush();
-                    }
-                }
-            }
-            else if (AppsCategoryButton.isSelected() && MobileGroupsButton.isSelected()){
-                try (BufferedWriter writer = new BufferedWriter(new FileWriter(timeStampPattern.format(java.time.LocalDateTime.now()) + "MobileProfiles.txt"))) {
-                    OutputMessage.setText( "Writing to file " + timeStampPattern.format(java.time.LocalDateTime.now()) + " MobileApps.txt");
-                    JSONObject jsonPolicy = new JSONObject(api.get("mobiledeviceapplications"));
-                    JSONArray jsonPolicyArray = jsonPolicy.getJSONArray("mobile_device_applications");
-                    for(int i=0; i<jsonPolicyArray.length(); i++){
-                        JSONObject dataObj = (JSONObject) jsonPolicyArray.get(i);
-                        int id = dataObj.getInt("id");
-                        String name = dataObj.getString("name");
-                        writer.write(name);
-                        writer.newLine();
-                        
-                        JSONObject jsonScope = new JSONObject(api.get("mobiledeviceapplications/id/" + id + "/subset/scope"));
-                        JSONObject scopeObject = jsonScope.getJSONObject("mobile_device_application");
-                        JSONObject scope = scopeObject.getJSONObject("scope");
-                        Object compscope = scope.get("mobile_device_groups").toString().replace("[{", "").replace("}]", "").replace("\"", "");
+                        Object compscope = scope.get("computer_groups").toString().replace("[{", "").replace("}]", "").replace("\"", "").replace("}", "").replace("{", "");
                         writer.newLine();
                         writer.write("Group: " + (String) compscope);
                         writer.newLine();
@@ -303,7 +286,7 @@ EbooksCategoryButton.setSelected(false);
                 }
             }
             else if (ProfilesCategoryButton.isSelected() && MobileGroupsButton.isSelected()){
-                try (BufferedWriter writer = new BufferedWriter(new FileWriter(timeStampPattern.format(java.time.LocalDateTime.now()) + "MobileApps.txt"))) {
+                try (BufferedWriter writer = new BufferedWriter(new FileWriter(timeStampPattern.format(java.time.LocalDateTime.now()) + "MobileProfiles.txt"))) {
                     OutputMessage.setText( "Writing to file " + timeStampPattern.format(java.time.LocalDateTime.now()) + " MobileProfiles.txt");
                     JSONObject jsonPolicy = new JSONObject(api.get("mobiledeviceconfigurationprofiles"));
                     JSONArray jsonPolicyArray = jsonPolicy.getJSONArray("configuration_profiles");
@@ -317,7 +300,33 @@ EbooksCategoryButton.setSelected(false);
                         JSONObject jsonScope = new JSONObject(api.get("mobiledeviceconfigurationprofiles/id/" + id + "/subset/scope"));
                         JSONObject scopeObject = jsonScope.getJSONObject("configuration_profile");
                         JSONObject scope = scopeObject.getJSONObject("scope");
-                        Object compscope = scope.get("mobile_device_groups").toString().replace("[{", "").replace("}]", "").replace("\"", "");
+                        Object compscope = scope.get("mobile_device_groups").toString().replace("[{", "").replace("}]", "").replace("\"", "").replace("}", "").replace("{", "");                    
+                        writer.newLine();
+                        writer.write("Group: " + (String) compscope);
+                        writer.newLine();
+                        writer.write("--------------------------------------------");
+                        writer.newLine();
+                        writer.flush();
+                    }
+                }
+            }
+            else if (AppsCategoryButton.isSelected() && MobileGroupsButton.isSelected()){
+                try (BufferedWriter writer = new BufferedWriter(new FileWriter(timeStampPattern.format(java.time.LocalDateTime.now()) + "MobileApps.txt"))) {
+                    OutputMessage.setText( "Writing to file " + timeStampPattern.format(java.time.LocalDateTime.now()) + " MobileApps.txt");                    
+                    JSONObject jsonPolicy = new JSONObject(api.get("mobiledeviceapplications"));
+                    JSONArray jsonPolicyArray = jsonPolicy.getJSONArray("mobile_device_applications");
+                    for(int i=0; i<jsonPolicyArray.length(); i++){
+                        JSONObject dataObj = (JSONObject) jsonPolicyArray.get(i);
+                        int id = dataObj.getInt("id");
+                        String name = dataObj.getString("name");
+                        writer.write(name);
+                        writer.newLine();
+                        
+                        JSONObject jsonScope = new JSONObject(api.get("mobiledeviceapplications/id/" + id + "/subset/scope"));
+                        JSONObject scopeObject = jsonScope.getJSONObject("mobile_device_application");
+                        JSONObject scope = scopeObject.getJSONObject("scope");
+                        Object compscope = scope.get("mobile_device_groups").toString().replace("[{", "").replace("}]", "").replace("\"", "").replace("}", "").replace("{", "");
+
                         writer.newLine();
                         writer.write("Group: " + (String) compscope);
                         writer.newLine();
@@ -345,7 +354,7 @@ EbooksCategoryButton.setSelected(false);
                         JSONObject jsonScope = new JSONObject(api.get("ebooks/id/" + id + "/subset/scope"));
                         JSONObject scopeObject = jsonScope.getJSONObject("ebook");
                         JSONObject scope = scopeObject.getJSONObject("scope");
-                        Object compscope = scope.get("mobile_device_groups").toString().replace("[{", "").replace("}]", "").replace("\"", "");
+                        Object compscope = scope.get("mobile_device_groups").toString().replace("[{", "").replace("}]", "").replace("\"", "").replace("}", "").replace("{", "");
                         writer.newLine();
                         writer.write("Group: " + (String) compscope);
                         writer.newLine();
@@ -353,15 +362,13 @@ EbooksCategoryButton.setSelected(false);
                         writer.newLine();
                         writer.flush();
                     }
-                    
-                    
                 }
             }
             else
                 OutputMessage.setText("Please Select a Type of Device Group and a Category");
         } catch (JssApiException | JSONException | IOException ex) {
-            OutputMessage.setText( "URL, username and password not accepted.");
-            Logger.getLogger(DeviceGroupTool.class.getName()).log(Level.SEVERE, null, ex);           
+            OutputMessage.setText("URL, username and password not accepted.");
+            Logger.getLogger(MobileDeviceTool.class.getName()).log(Level.SEVERE, null, ex);           
         }
     });
 }
