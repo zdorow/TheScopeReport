@@ -1,5 +1,5 @@
 # TheScopeReport
-This is a java program that uses Jamf Pro API calls to collect information about device groups. It can be run on any computer that can access Jamf Pro from their web browser. It makes the text file inside the folder it was run in. 
+This is a java program that uses Jamf Pro API calls to collect information about device groups. It can be run on any computer that can access Jamf Pro from their web browser. It makes the .csv file inside the folder it was run in. 
 
 Currently it runs a full scope report, leaving out blank fields, for the following Jamf Pro categories: 
 Policies,
@@ -12,6 +12,8 @@ Ebooks
 Requirements: JDK and JRE (Written in version 1.8)
 
 Windows/MacOS: Unzip then go to /dist/MobileDeviceTool.jar and double click.
+
+NOTE: When it runs, if it can appear to freeze while wrting the file. It will tell you when it is done so do not worry it is just doing work in the background. Adding a progress bar is in the works, however it has not been implemented. 
 
 Linux: Has not been tested in linux, however if you have the most recent versions of the JRE and JDK then it should run fine. It does require a GUI. If the demand is there, it could easily be converted to a script.
 
