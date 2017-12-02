@@ -240,7 +240,7 @@ EbooksCategoryButton.setSelected(false);
                              String ALLmobileScopeSLIM = ALLmobileScope.toString().replace("[", "").replace("]", "");
                              String[] ALLmobileScopeSLIMARRAY = ALLmobileScopeSLIM.split("name:");
                              writer.newLine();
-                             writer.write("\nMobile Devices:\n");
+                             writer.write("\nMobile Devices:");
                              writer.newLine();
                              for (String ALLmobileScopeSLIMARRAY1 : ALLmobileScopeSLIMARRAY) {
                                     writer.write(ALLmobileScopeSLIMARRAY1);
@@ -252,7 +252,7 @@ EbooksCategoryButton.setSelected(false);
                             String MobileGroupSLIM = MobileGroupScope.toString().replace("[", "").replace("]", "");
                             String[] MobileGroupARRAY = MobileGroupSLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nMobile Device Groups:\n");
+                            writer.write("\nMobile Device Groups:");
                             writer.newLine();
                                 for (String MobileGroupARRAY1 : MobileGroupARRAY) {
                                     writer.write(MobileGroupARRAY1);
@@ -270,7 +270,7 @@ EbooksCategoryButton.setSelected(false);
                             String ALLjssUserScopeSLIM = ALLjssUserScope.toString().replace("[", "").replace("]", "");
                             String[] ALLjssUserScopeSLIMARRAY = ALLjssUserScopeSLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nJAMF Users:\n");
+                            writer.write("\nJAMF Users:");
                             writer.newLine();
                                 for (String ALLjssUserScopeSLIMARRAY1 : ALLjssUserScopeSLIMARRAY) {
                                     writer.write(ALLjssUserScopeSLIMARRAY1);
@@ -282,7 +282,7 @@ EbooksCategoryButton.setSelected(false);
                             String UserGroupScopeSLIM = UserGroupScope.toString().replace("[", "").replace("]", "");
                             String[] UserGroupScopeSLIMARRAY = UserGroupScopeSLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nJAMF User Groups:\n");
+                            writer.write("\nJAMF User Groups:");
                             writer.newLine();
                                 for (String UserGroupScopeSLIMARRAY1 : UserGroupScopeSLIMARRAY) {
                                     writer.write(UserGroupScopeSLIMARRAY1);
@@ -296,7 +296,7 @@ EbooksCategoryButton.setSelected(false);
                             String buildingsSLIM = buildings.toString().replace("[", "").replace("]", "");
                             String[] buildingsSLIMARRAY = buildingsSLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nBuildings:\n");
+                            writer.write("\nBuildings:");
                             writer.newLine();
                                 for (String buildingsSLIMARRAY1 : buildingsSLIMARRAY) {
                                     writer.write(buildingsSLIMARRAY1);
@@ -308,7 +308,7 @@ EbooksCategoryButton.setSelected(false);
                             String departmentsSLIM = departments.toString().replace("[", "").replace("]", "");
                             String[] departmentsSLIMARRAY = departmentsSLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nDepartments:\n");
+                            writer.write("\nDepartments:");
                                 for (String departmentsSLIMARRAY1 : departmentsSLIMARRAY) {
                                     writer.write(departmentsSLIMARRAY1);
                                     writer.newLine();
@@ -321,7 +321,7 @@ EbooksCategoryButton.setSelected(false);
                             String networksSLIM = network_segments.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] networksSLIMARRAY = networksSLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nNetwork Segments:\n");
+                            writer.write("\nLimited to Network Segments:");
                             writer.newLine();
                                 for (String networksSLIMARRAY1 : networksSLIMARRAY) {
                                     writer.write(networksSLIMARRAY1);
@@ -333,7 +333,7 @@ EbooksCategoryButton.setSelected(false);
                             String userLimitaitons1SLIM = limitations.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] userLimitaitons1SLIMARRAY = userLimitaitons1SLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nLimited to Users:\n");
+                            writer.write("\nLimited to Users:");
                             writer.newLine();
                                 for (String userLimitaitons1SLIMARRAY1 : userLimitaitons1SLIMARRAY) {
                                     writer.write(userLimitaitons1SLIMARRAY1);
@@ -345,7 +345,7 @@ EbooksCategoryButton.setSelected(false);
                             String userGroupsSLIM = users.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] userGroupsSLIMARRAY = userGroupsSLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nLimited User Groups:\n");
+                            writer.write("\nLimited to User Groups:");
                             writer.newLine();
                                 for (String userGroupsSLIMARRAY1 : userGroupsSLIMARRAY) {
                                     writer.write(userGroupsSLIMARRAY1);
@@ -360,7 +360,7 @@ EbooksCategoryButton.setSelected(false);
                             String mobile_devicesSLIM = mobile_devices.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] mobile_devicesSLIMARRAY = mobile_devicesSLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nExcluded Mobile Devices:\n");
+                            writer.write("\nExcluded Mobile Devices:");
                             writer.newLine();
                                 for (String mobile_devicesSLIMARRAY1 : mobile_devicesSLIMARRAY) {
                                     writer.write(mobile_devicesSLIMARRAY1);
@@ -373,7 +373,7 @@ EbooksCategoryButton.setSelected(false);
                             String mobile_device_groupsSLIM = mobile_device_groups.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] mobile_device_groupsSLIMARRAY = mobile_device_groupsSLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nExcluded Mobile Device Groups:\n");
+                            writer.write("\nExcluded Mobile Device Groups:");
                             writer.newLine();
                                 for (String mobile_device_groupsSLIMARRAY1 : mobile_device_groupsSLIMARRAY) {
                                     writer.write(mobile_device_groupsSLIMARRAY1);
@@ -385,7 +385,7 @@ EbooksCategoryButton.setSelected(false);
                             String buildingsEXSLIM = buildingsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] buildingsEXSLIMARRAY = buildingsEXSLIM.split("name:");
                             writer.newLine();
-                                writer.write("\nExcluded buildings:\n");
+                                writer.write("\nExcluded buildings:");
                                 writer.newLine();
                                 for (String buildingsEXSLIMARRAY1 : buildingsEXSLIMARRAY) {
                                     writer.write(buildingsEXSLIMARRAY1);
@@ -398,7 +398,7 @@ EbooksCategoryButton.setSelected(false);
                             String departmentsEXSLIM = departmentsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] buildingsEXSLIMARRAY = departmentsEXSLIM.split("name:");
                             writer.newLine();
-                                writer.write("\nExcluded departments:\n");
+                                writer.write("\nExcluded departments:");
                                 writer.newLine();
                                 for (String buildingsEXSLIMARRAY1 : buildingsEXSLIMARRAY) {
                                     writer.write(buildingsEXSLIMARRAY1);
@@ -410,7 +410,7 @@ EbooksCategoryButton.setSelected(false);
                             String JSSusersEXSLIM = JSSusersEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] JSSusersEXSLIMARRAY = JSSusersEXSLIM.split("name:");
                             writer.newLine();
-                                writer.write("\nExcluded JAMF users:\n");
+                                writer.write("\nExcluded JAMF users:");
                                 writer.newLine();
                                 for (String JSSusersEXSLIMARRAY1 : JSSusersEXSLIMARRAY) {
                                     writer.write(JSSusersEXSLIMARRAY1);
@@ -423,7 +423,7 @@ EbooksCategoryButton.setSelected(false);
                             String JSSuser_groupsEXSLIM = JSSuser_groupsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] JSSuser_groupsEXSLIMARRAY = JSSuser_groupsEXSLIM.split("name:");
                             writer.newLine();
-                                writer.write("\nExcluded to JAMF user groups:\n");
+                                writer.write("\nExcluded to JAMF user groups:");
                                 writer.newLine();
                                 for (String JSSuser_groupsEXSLIMARRAY1 : JSSuser_groupsEXSLIMARRAY) {
                                     writer.write(JSSuser_groupsEXSLIMARRAY1);
@@ -435,7 +435,7 @@ EbooksCategoryButton.setSelected(false);
                             String usersEXSLIM = usersEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] usersEXSLIMARRAY = usersEXSLIM.split("name:");
                             writer.newLine();
-                                writer.write("\nExcluded users:\n");
+                                writer.write("\nExcluded users:");
                                 writer.newLine();
                                 for (String usersEXSLIMARRAY1 : usersEXSLIMARRAY) {
                                     writer.write(usersEXSLIMARRAY1);
@@ -448,7 +448,7 @@ EbooksCategoryButton.setSelected(false);
                             String user_groupsEXSLIM = user_groupsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] user_groupsEXSLIMARRAY = user_groupsEXSLIM.split("name:");
                             writer.newLine();
-                                writer.write("\nExcluded user groups:\n");
+                                writer.write("\nExcluded user groups:");
                                 writer.newLine();
                                 for (String user_groupsEXSLIMARRAY1 : user_groupsEXSLIMARRAY) {
                                     writer.write(user_groupsEXSLIMARRAY1);
@@ -461,7 +461,7 @@ EbooksCategoryButton.setSelected(false);
                             String network_segmentsEXSLIM = network_segmentsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] network_segmentsEXSLIMARRAY = network_segmentsEXSLIM.split("name:");
                             writer.newLine();
-                                writer.write("\nExcluded to Network Segements:\n");
+                                writer.write("\nExcluded to Network Segements:");
                                 writer.newLine();
                                 for (String network_segmentsEXSLIMARRAY1 : network_segmentsEXSLIMARRAY) {
                                     writer.write(network_segmentsEXSLIMARRAY1);
@@ -473,7 +473,7 @@ EbooksCategoryButton.setSelected(false);
                         String ibeaconsEXSLIM = ibeaconsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                         String[] ibeaconsEXSLIMARRAY = ibeaconsEXSLIM.split("name:");
                         writer.newLine();
-                        writer.write("\nExcluded iBeacons:\n ");
+                        writer.write("\nExcluded iBeacons:");
                         writer.newLine();
                                     for (String ibeaconsEXSLIMARRAY1 : ibeaconsEXSLIMARRAY) {
                                     writer.write(ibeaconsEXSLIMARRAY1);
@@ -520,7 +520,7 @@ EbooksCategoryButton.setSelected(false);
                              String ALLmobileScopeSLIM = ALLmobileScope.toString().replace("[", "").replace("]", "");
                              String[] ALLmobileScopeSLIMARRAY = ALLmobileScopeSLIM.split("name:");
                              writer.newLine();
-                             writer.write("\nMobile Devices:\n");
+                             writer.write("\nMobile Devices:");
                              writer.newLine();
                              for (String ALLmobileScopeSLIMARRAY1 : ALLmobileScopeSLIMARRAY) {
                                     writer.write(ALLmobileScopeSLIMARRAY1);
@@ -532,7 +532,7 @@ EbooksCategoryButton.setSelected(false);
                             String MobileGroupSLIM = MobileGroupScope.toString().replace("[", "").replace("]", "");
                             String[] MobileGroupARRAY = MobileGroupSLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nMobile Device Groups:\n");
+                            writer.write("\nMobile Device Groups:");
                             writer.newLine();
                                 for (String MobileGroupARRAY1 : MobileGroupARRAY) {
                                     writer.write(MobileGroupARRAY1);
@@ -550,7 +550,7 @@ EbooksCategoryButton.setSelected(false);
                             String ALLjssUserScopeSLIM = ALLjssUserScope.toString().replace("[", "").replace("]", "");
                             String[] ALLjssUserScopeSLIMARRAY = ALLjssUserScopeSLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nJAMF Users:\n");
+                            writer.write("\nJAMF Users:");
                             writer.newLine();
                                 for (String ALLjssUserScopeSLIMARRAY1 : ALLjssUserScopeSLIMARRAY) {
                                     writer.write(ALLjssUserScopeSLIMARRAY1);
@@ -562,7 +562,7 @@ EbooksCategoryButton.setSelected(false);
                             String UserGroupScopeSLIM = UserGroupScope.toString().replace("[", "").replace("]", "");
                             String[] UserGroupScopeSLIMARRAY = UserGroupScopeSLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nJAMF User Groups:\n");
+                            writer.write("\nJAMF User Groups:");
                             writer.newLine();
                                 for (String UserGroupScopeSLIMARRAY1 : UserGroupScopeSLIMARRAY) {
                                     writer.write(UserGroupScopeSLIMARRAY1);
@@ -576,7 +576,7 @@ EbooksCategoryButton.setSelected(false);
                             String buildingsSLIM = buildings.toString().replace("[", "").replace("]", "");
                             String[] buildingsSLIMARRAY = buildingsSLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nBuildings:\n");
+                            writer.write("\nBuildings:");
                             writer.newLine();
                                 for (String buildingsSLIMARRAY1 : buildingsSLIMARRAY) {
                                     writer.write(buildingsSLIMARRAY1);
@@ -588,7 +588,7 @@ EbooksCategoryButton.setSelected(false);
                             String departmentsSLIM = departments.toString().replace("[", "").replace("]", "");
                             String[] departmentsSLIMARRAY = departmentsSLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nDepartments:\n");
+                            writer.write("\nDepartments:");
                             writer.newLine();
                                 for (String departmentsSLIMARRAY1 : departmentsSLIMARRAY) {
                                     writer.write(departmentsSLIMARRAY1);
@@ -602,7 +602,7 @@ EbooksCategoryButton.setSelected(false);
                             String networksSLIM = network_segments.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] networksSLIMARRAY = networksSLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nNetwork Segments:\n");
+                            writer.write("\nLimited to Network Segments:");
                             writer.newLine();
                                 for (String networksSLIMARRAY1 : networksSLIMARRAY) {
                                     writer.write(networksSLIMARRAY1);
@@ -614,7 +614,7 @@ EbooksCategoryButton.setSelected(false);
                             String userLimitaitons1SLIM = limitations.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] userLimitaitons1SLIMARRAY = userLimitaitons1SLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nLimited to Users:\n");
+                            writer.write("\nLimited to Users:");
                             writer.newLine();
                                 for (String userLimitaitons1SLIMARRAY1 : userLimitaitons1SLIMARRAY) {
                                     writer.write(userLimitaitons1SLIMARRAY1);
@@ -626,7 +626,7 @@ EbooksCategoryButton.setSelected(false);
                             String userGroupsSLIM = users.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] userGroupsSLIMARRAY = userGroupsSLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nLimited User Groups:\n");
+                            writer.write("\nLimited User Groups:");
                             writer.newLine();
                                 for (String userGroupsSLIMARRAY1 : userGroupsSLIMARRAY) {
                                     writer.write(userGroupsSLIMARRAY1);
@@ -641,7 +641,7 @@ EbooksCategoryButton.setSelected(false);
                             String mobile_devicesSLIM = mobile_devices.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] mobile_devicesSLIMARRAY = mobile_devicesSLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nExcluded Mobile Devices:\n");
+                            writer.write("\nExcluded Mobile Devices:");
                             writer.newLine();
                                 for (String mobile_devicesSLIMARRAY1 : mobile_devicesSLIMARRAY) {
                                     writer.write(mobile_devicesSLIMARRAY1);
@@ -654,7 +654,7 @@ EbooksCategoryButton.setSelected(false);
                             String mobile_device_groupsSLIM = mobile_device_groups.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] mobile_device_groupsSLIMARRAY = mobile_device_groupsSLIM.split("name:");
                             writer.newLine();
-                            writer.write("\nExcluded Mobile Device Groups:\n");
+                            writer.write("\nExcluded Mobile Device Groups:");
                             writer.newLine();
                                 for (String mobile_device_groupsSLIMARRAY1 : mobile_device_groupsSLIMARRAY) {
                                     writer.write(mobile_device_groupsSLIMARRAY1);
@@ -666,7 +666,7 @@ EbooksCategoryButton.setSelected(false);
                             String buildingsEXSLIM = buildingsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] buildingsEXSLIMARRAY = buildingsEXSLIM.split("name:");
                             writer.newLine();
-                                writer.write("\nExcluded buildings:\n");
+                                writer.write("\nExcluded buildings:");
                                 writer.newLine();
                                 for (String buildingsEXSLIMARRAY1 : buildingsEXSLIMARRAY) {
                                     writer.write(buildingsEXSLIMARRAY1);
@@ -679,7 +679,7 @@ EbooksCategoryButton.setSelected(false);
                             String departmentsEXSLIM = departmentsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] buildingsEXSLIMARRAY = departmentsEXSLIM.split("name:");
                             writer.newLine();
-                                writer.write("\nExcluded departments:\n");
+                                writer.write("\nExcluded departments:");
                                 writer.newLine();
                                 for (String buildingsEXSLIMARRAY1 : buildingsEXSLIMARRAY) {
                                     writer.write(buildingsEXSLIMARRAY1);
@@ -691,7 +691,7 @@ EbooksCategoryButton.setSelected(false);
                             String JSSusersEXSLIM = JSSusersEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] JSSusersEXSLIMARRAY = JSSusersEXSLIM.split("name:");
                             writer.newLine();
-                                writer.write("\nExcluded JAMF users:\n");
+                                writer.write("\nExcluded JAMF users:");
                                 writer.newLine();
                                 for (String JSSusersEXSLIMARRAY1 : JSSusersEXSLIMARRAY) {
                                     writer.write(JSSusersEXSLIMARRAY1);
@@ -704,7 +704,7 @@ EbooksCategoryButton.setSelected(false);
                             String JSSuser_groupsEXSLIM = JSSuser_groupsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] JSSuser_groupsEXSLIMARRAY = JSSuser_groupsEXSLIM.split("name:");
                             writer.newLine();
-                                writer.write("\nExcluded to JAMF user groups:\n");
+                                writer.write("\nExcluded to JAMF user groups:");
                                 writer.newLine();
                                 for (String JSSuser_groupsEXSLIMARRAY1 : JSSuser_groupsEXSLIMARRAY) {
                                     writer.write(JSSuser_groupsEXSLIMARRAY1);
@@ -716,7 +716,7 @@ EbooksCategoryButton.setSelected(false);
                             String usersEXSLIM = usersEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] usersEXSLIMARRAY = usersEXSLIM.split("name:");
                             writer.newLine();
-                                writer.write("\nExcluded users:\n");
+                                writer.write("\nExcluded users:");
                                 writer.newLine();
                                 for (String usersEXSLIMARRAY1 : usersEXSLIMARRAY) {
                                     writer.write(usersEXSLIMARRAY1);
@@ -729,7 +729,7 @@ EbooksCategoryButton.setSelected(false);
                             String user_groupsEXSLIM = user_groupsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] user_groupsEXSLIMARRAY = user_groupsEXSLIM.split("name:");
                             writer.newLine();
-                                writer.write("\nExcluded user groups:\n");
+                                writer.write("\nExcluded user groups:");
                                 writer.newLine();
                                 for (String user_groupsEXSLIMARRAY1 : user_groupsEXSLIMARRAY) {
                                     writer.write(user_groupsEXSLIMARRAY1);
@@ -742,7 +742,7 @@ EbooksCategoryButton.setSelected(false);
                             String network_segmentsEXSLIM = network_segmentsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] network_segmentsEXSLIMARRAY = network_segmentsEXSLIM.split("name:");
                             writer.newLine();
-                                writer.write("\nExcluded to Network Segements:\n");
+                                writer.write("\nExcluded to Network Segements:");
                                 writer.newLine();
                                 for (String network_segmentsEXSLIMARRAY1 : network_segmentsEXSLIMARRAY) {
                                     writer.write(network_segmentsEXSLIMARRAY1);
@@ -760,7 +760,7 @@ EbooksCategoryButton.setSelected(false);
             else if (MacProfilesCategoryButton.isSelected()){
                 OutputMessage.setText( "Starting writing to the file " + timeStampPattern.format(java.time.LocalDateTime.now()) + " MacProfiles.csv");
                 try (BufferedWriter writer = new BufferedWriter(new FileWriter(timeStampPattern.format(java.time.LocalDateTime.now()) + " MacProfiles.csv"))) {
-                    OutputMessage.setText( "Doen writing to file " + timeStampPattern.format(java.time.LocalDateTime.now()) + " MacProfiles.csv");
+                    OutputMessage.setText( "Done writing to file " + timeStampPattern.format(java.time.LocalDateTime.now()) + " MacProfiles.csv");
                     JSONObject jsonPolicy = new JSONObject(api.get("osxconfigurationprofiles"));
                     JSONArray jsonPolicyArray = jsonPolicy.getJSONArray("os_x_configuration_profiles");
                     writer.write("Total Mac Configuration Profiles are:" + jsonPolicyArray.length());
@@ -786,7 +786,7 @@ EbooksCategoryButton.setSelected(false);
                         if (ALLcompscopechk == "false"){
                             Object ALLcompscoped = scope.get("computers").toString().replace("{", "").replace("}", "").replace("\"", "");
                             if (!"[]".equals(ALLcompscoped.toString())){
-                            writer.write("\n Scoped to Computers: \n");
+                            writer.write("\n Scoped to Computers:");
                             writer.newLine();
                             String ALLcompscopedSLIM = ALLcompscoped.toString().replace("[", "").replace("]", "");
                             String[] ALLcompscopedARRAY = ALLcompscopedSLIM.split("name:");
@@ -799,7 +799,7 @@ EbooksCategoryButton.setSelected(false);
                         Object compscope = scope.get("computer_groups").toString().replace("{", "").replace("}", "").replace("\"", "");
                         if (!"[]".equals(compscope.toString())){
                             Object compscopeGRP = compscope.toString().replace("[", "").replace("]", "");
-                            writer.write("\nComputer Groups:\n");
+                            writer.write("\nComputer Groups:");
                             writer.newLine();
                             String compscopeGRPSLIM = compscopeGRP.toString().replace("[", "").replace("]", "");
                             String[] compscopeGRPSLIMARRAY = compscopeGRPSLIM.split("name:");
@@ -819,18 +819,21 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(ALLjssUserScope.toString())){
                             String ALLjssUserScopeSLIM = ALLjssUserScope.toString().replace("[", "").replace("]", "");
                             String[] ALLjssUserScopeSLIMARRAY = ALLjssUserScopeSLIM.split("name:");
-                            writer.write("\nJAMF Users:\n");
+                            writer.write("\nJAMF Users:");
                             writer.newLine();
                                 for (String ALLjssUserScopeSLIMARRAY1 : ALLjssUserScopeSLIMARRAY) {
                                     writer.write(ALLjssUserScopeSLIMARRAY1);
                                     writer.newLine();
                                 }
                         }
+                                
+ //This is a strange one...... blank it is....                              
                         Object UserGroupScope = scope.get("jss_user_groups").toString().replace("{", "").replace("}", "").replace("\"", "");
-                        if (!"[]".equals(UserGroupScope.toString())){ 
+                        if (!"".equals(UserGroupScope.toString())){ 
+                            writer.write(UserGroupScope.toString());
                             String UserGroupScopeSLIM = UserGroupScope.toString().replace("[", "").replace("]", "");
                             String[] UserGroupScopeSLIMARRAY = UserGroupScopeSLIM.split("name:");
-                            writer.write("\nJAMF User Groups:\n");
+                            writer.write("\nJAMF User Groups:");
                             writer.newLine();
                                 for (String UserGroupScopeSLIMARRAY1 : UserGroupScopeSLIMARRAY) {
                                     writer.write(UserGroupScopeSLIMARRAY1);
@@ -843,7 +846,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(buildings.toString())){
                             String buildingsSLIM = buildings.toString().replace("[", "").replace("]", "");
                             String[] buildingsSLIMARRAY = buildingsSLIM.split("name:");
-                            writer.write("\nBuildings:\n");
+                            writer.write("\nBuildings:");
                             writer.newLine();
                                 for (String buildingsSLIMARRAY1 : buildingsSLIMARRAY) {
                                     writer.write(buildingsSLIMARRAY1);
@@ -854,7 +857,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(departments.toString())){
                             String departmentsSLIM = departments.toString().replace("[", "").replace("]", "");
                             String[] departmentsSLIMARRAY = departmentsSLIM.split("name:");
-                            writer.write("\nDepartments:\n");
+                            writer.write("\nDepartments:");
                             writer.newLine();
                                 for (String departmentsSLIMARRAY1 : departmentsSLIMARRAY) {
                                     writer.write(departmentsSLIMARRAY1);
@@ -867,7 +870,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(network_segments.toString())){
                             String networksSLIM = network_segments.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] networksSLIMARRAY = networksSLIM.split("name:");
-                            writer.write("\nNetwork Segments:\n");
+                            writer.write("\nLimited to Network Segments:");
                             writer.newLine();
                                 for (String networksSLIMARRAY1 : networksSLIMARRAY) {
                                     writer.write(networksSLIMARRAY1);
@@ -878,7 +881,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(users.toString())){
                             String userLimitaitons1SLIM = limitations.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] userLimitaitons1SLIMARRAY = userLimitaitons1SLIM.split("name:");
-                            writer.write("\nLimited to Users:\n");
+                            writer.write("\nLimited to Users:");
                             writer.newLine();
                                 for (String userLimitaitons1SLIMARRAY1 : userLimitaitons1SLIMARRAY) {
                                     writer.write(userLimitaitons1SLIMARRAY1);
@@ -889,7 +892,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(userGroups.toString())){
                             String userGroupsSLIM = users.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] userGroupsSLIMARRAY = userGroupsSLIM.split("name:");
-                            writer.write("\nLimited User Groups:\n");
+                            writer.write("\nLimited User Groups:");
                             writer.newLine();
                                 for (String userGroupsSLIMARRAY1 : userGroupsSLIMARRAY) {
                                     writer.write(userGroupsSLIMARRAY1);
@@ -900,7 +903,7 @@ EbooksCategoryButton.setSelected(false);
                         JSONObject exclusions = scope.getJSONObject("exclusions");
                        Object ALLcompscoped = exclusions.get("computers");
                             if (!"[]".equals(ALLcompscoped.toString())){
-                            writer.write("\nExcluded Computers: \n");
+                            writer.write("\nExcluded Computers:");
                             writer.newLine();
                             String ALLcompscopedSLIM = ALLcompscoped.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] ALLcompscopedARRAY = ALLcompscopedSLIM.split("name:");
@@ -912,7 +915,7 @@ EbooksCategoryButton.setSelected(false);
                             Object ALLcompGroup = exclusions.get("computer_groups");
                         if (!"[]".equals(ALLcompGroup.toString())){
                             Object compscopeGRP = ALLcompGroup.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
-                            writer.write("\nExcluded Computer Groups:\n");
+                            writer.write("\nExcluded Computer Groups:");
                             writer.newLine();
                             String compscopeGRPSLIM = compscopeGRP.toString().replace("[", "").replace("]", "");
                             String[] compscopeGRPSLIMARRAY = compscopeGRPSLIM.split("name:");
@@ -926,7 +929,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(buildingsEX.toString())){
                             String buildingsEXSLIM = buildings.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] buildingsEXSLIMARRAY = buildingsEXSLIM.split("name:");
-                                writer.write("\nExcluded buildings:\n");
+                                writer.write("\nExcluded buildings:");
                                 writer.newLine();
                                 for (String buildingsEXSLIMARRAY1 : buildingsEXSLIMARRAY) {
                                     writer.write(buildingsEXSLIMARRAY1);
@@ -939,7 +942,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(departmentsEX.toString())){
                             String departmentsEXSLIM = departmentsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] buildingsEXSLIMARRAY = departmentsEXSLIM.split("name:");
-                                writer.write("\nExcluded departments:\n");
+                                writer.write("\nExcluded departments:");
                                 writer.newLine();
                                 for (String buildingsEXSLIMARRAY1 : buildingsEXSLIMARRAY) {
                                     writer.write(buildingsEXSLIMARRAY1);
@@ -950,7 +953,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(JSSusersEX.toString())){
                             String JSSusersEXSLIM = JSSusersEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] JSSusersEXSLIMARRAY = JSSusersEXSLIM.split("name:");
-                                writer.write("\nExcluded JAMF users:\n");
+                                writer.write("\nExcluded JAMF users:");
                                 writer.newLine();
                                 for (String JSSusersEXSLIMARRAY1 : JSSusersEXSLIMARRAY) {
                                     writer.write(JSSusersEXSLIMARRAY1);
@@ -962,7 +965,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(JSSuser_groupsEX.toString())){
                             String JSSuser_groupsEXSLIM = JSSuser_groupsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] JSSuser_groupsEXSLIMARRAY = JSSuser_groupsEXSLIM.split("name:");
-                                writer.write("\nExcluded to JAMF user groups:\n");
+                                writer.write("\nExcluded JAMF user groups:");
                                 writer.newLine();
                                 for (String JSSuser_groupsEXSLIMARRAY1 : JSSuser_groupsEXSLIMARRAY) {
                                     writer.write(JSSuser_groupsEXSLIMARRAY1);
@@ -973,7 +976,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(usersEX.toString())){
                             String usersEXSLIM = usersEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] usersEXSLIMARRAY = usersEXSLIM.split("name:");
-                                writer.write("\nExcluded users:\n");
+                                writer.write("\nExcluded users:");
                                 writer.newLine();
                                 for (String usersEXSLIMARRAY1 : usersEXSLIMARRAY) {
                                     writer.write(usersEXSLIMARRAY1);
@@ -985,7 +988,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(user_groupsEX.toString())){
                             String user_groupsEXSLIM = user_groupsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] user_groupsEXSLIMARRAY = user_groupsEXSLIM.split("name:");
-                                writer.write("\nExcluded user groups:\n");
+                                writer.write("\nExcluded user groups:");
                                 writer.newLine();
                                 for (String user_groupsEXSLIMARRAY1 : user_groupsEXSLIMARRAY) {
                                     writer.write(user_groupsEXSLIMARRAY1);
@@ -997,7 +1000,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(network_segmentsEX.toString())){
                             String network_segmentsEXSLIM = network_segmentsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] network_segmentsEXSLIMARRAY = network_segmentsEXSLIM.split("name:");
-                                writer.write("\nExcluded to Network Segements:\n");
+                                writer.write("\nExcluded to Network Segements:");
                                 writer.newLine();
                                 for (String network_segmentsEXSLIMARRAY1 : network_segmentsEXSLIMARRAY) {
                                     writer.write(network_segmentsEXSLIMARRAY1);
@@ -1008,7 +1011,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(ibeaconsEX.toString())){
                         String ibeaconsEXSLIM = ibeaconsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                         String[] ibeaconsEXSLIMARRAY = ibeaconsEXSLIM.split("name:");
-                        writer.write("\nExcluded iBeacons:\n ");
+                        writer.write("\nExcluded iBeacons:");
                         writer.newLine();
                                     for (String ibeaconsEXSLIMARRAY1 : ibeaconsEXSLIMARRAY) {
                                     writer.write(ibeaconsEXSLIMARRAY1);
@@ -1054,7 +1057,7 @@ EbooksCategoryButton.setSelected(false);
                             if (ALLcompscopechk == "false"){
                             Object ALLcompscoped = scope.get("computers").toString().replace("{", "").replace("}", "").replace("\"", "");
                             if (!"[]".equals(ALLcompscoped.toString())){                            
-                            writer.write("\n Scoped to Computers: \n"); 
+                            writer.write("\n Scoped to Computers:"); 
                             writer.newLine();
                             String ALLcompscopedSLIM = ALLcompscoped.toString().replace("[", "").replace("]", "");
                             String[] ALLcompscopedARRAY = ALLcompscopedSLIM.split("name:");
@@ -1067,7 +1070,7 @@ EbooksCategoryButton.setSelected(false);
                             Object compscope = scope.get("computer_groups").toString().replace("{", "").replace("}", "").replace("\"", "");
                         if (!"[]".equals(compscope.toString())){
                             Object compscopeGRP = compscope.toString().replace("[", "").replace("]", "");
-                            writer.write("\nComputer Groups:\n");
+                            writer.write("\nComputer Groups:");
                             writer.newLine();
                             String compscopeGRPSLIM = compscopeGRP.toString().replace("[", "").replace("]", "");
                             String[] compscopeGRPSLIMARRAY = compscopeGRPSLIM.split("name:");
@@ -1086,7 +1089,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(ALLjssUserScope.toString())){
                             String ALLjssUserScopeSLIM = ALLjssUserScope.toString().replace("[", "").replace("]", "");
                             String[] ALLjssUserScopeSLIMARRAY = ALLjssUserScopeSLIM.split("name:");
-                            writer.write("\nJAMF Users:\n");
+                            writer.write("\nJAMF Users:");
                             writer.newLine();
                                 for (String ALLjssUserScopeSLIMARRAY1 : ALLjssUserScopeSLIMARRAY) {
                                     writer.write(ALLjssUserScopeSLIMARRAY1);
@@ -1097,7 +1100,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(UserGroupScope.toString())){ 
                             String UserGroupScopeSLIM = UserGroupScope.toString().replace("[", "").replace("]", "");
                             String[] UserGroupScopeSLIMARRAY = UserGroupScopeSLIM.split("name:");
-                            writer.write("\nJAMF User Groups:\n");
+                            writer.write("\nJAMF User Groups:");
                             writer.newLine();
                                 for (String UserGroupScopeSLIMARRAY1 : UserGroupScopeSLIMARRAY) {
                                     writer.write(UserGroupScopeSLIMARRAY1);
@@ -1110,7 +1113,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(buildings.toString())){
                             String buildingsSLIM = buildings.toString().replace("[", "").replace("]", "");
                             String[] buildingsSLIMARRAY = buildingsSLIM.split("name:");
-                            writer.write("\nBuildings:\n");
+                            writer.write("\nBuildings:");
                             writer.newLine();
                                 for (String buildingsSLIMARRAY1 : buildingsSLIMARRAY) {
                                     writer.write(buildingsSLIMARRAY1);
@@ -1121,7 +1124,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(departments.toString())){
                             String departmentsSLIM = departments.toString().replace("[", "").replace("]", "");
                             String[] departmentsSLIMARRAY = departmentsSLIM.split("name:");
-                            writer.write("\nDepartments:\n");
+                            writer.write("\nDepartments:");
                             writer.newLine();
                                 for (String departmentsSLIMARRAY1 : departmentsSLIMARRAY) {
                                     writer.write(departmentsSLIMARRAY1);
@@ -1134,7 +1137,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(network_segments.toString())){
                             String networksSLIM = network_segments.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] networksSLIMARRAY = networksSLIM.split("name:");
-                            writer.write("\nNetwork Segments:\n");
+                            writer.write("\nLimited to Network Segments:");
                             writer.newLine();
                                 for (String networksSLIMARRAY1 : networksSLIMARRAY) {
                                     writer.write(networksSLIMARRAY1);
@@ -1145,7 +1148,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(users.toString())){
                             String userLimitaitons1SLIM = limitations.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] userLimitaitons1SLIMARRAY = userLimitaitons1SLIM.split("name:");
-                            writer.write("\nLimited to Users:\n");
+                            writer.write("\nLimited to Users:");
                             writer.newLine();
                                 for (String userLimitaitons1SLIMARRAY1 : userLimitaitons1SLIMARRAY) {
                                     writer.write(userLimitaitons1SLIMARRAY1);
@@ -1156,7 +1159,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(userGroups.toString())){
                             String userGroupsSLIM = users.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] userGroupsSLIMARRAY = userGroupsSLIM.split("name:");
-                            writer.write("\nLimited User Groups:\n");
+                            writer.write("\nLimited to User Groups:");
                             writer.newLine();
                                 for (String userGroupsSLIMARRAY1 : userGroupsSLIMARRAY) {
                                     writer.write(userGroupsSLIMARRAY1);
@@ -1167,7 +1170,7 @@ EbooksCategoryButton.setSelected(false);
                         JSONObject exclusions = scope.getJSONObject("exclusions");
                        Object ALLcompscoped = exclusions.get("computers");
                             if (!"[]".equals(ALLcompscoped.toString())){
-                            writer.write("\nExcluded Computers: \n");
+                            writer.write("\nExcluded Computers:");
                             writer.newLine();
                             String ALLcompscopedSLIM = ALLcompscoped.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] ALLcompscopedARRAY = ALLcompscopedSLIM.split("name:");
@@ -1179,7 +1182,7 @@ EbooksCategoryButton.setSelected(false);
                             Object ALLcompGroup = exclusions.get("computer_groups");
                         if (!"[]".equals(ALLcompGroup.toString())){
                             Object compscopeGRP = ALLcompGroup.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
-                            writer.write("\nExcluded Computer Groups:\n");
+                            writer.write("\nExcluded Computer Groups:");
                             writer.newLine();
                             String compscopeGRPSLIM = compscopeGRP.toString().replace("[", "").replace("]", "");
                             String[] compscopeGRPSLIMARRAY = compscopeGRPSLIM.split("name:");
@@ -1192,7 +1195,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(buildingsEX.toString())){
                             String buildingsEXSLIM = buildings.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] buildingsEXSLIMARRAY = buildingsEXSLIM.split("name:");
-                                writer.write("\nExcluded buildings:\n");
+                                writer.write("\nExcluded buildings:");
                                 writer.newLine();
                                 for (String buildingsEXSLIMARRAY1 : buildingsEXSLIMARRAY) {
                                     writer.write(buildingsEXSLIMARRAY1);
@@ -1204,7 +1207,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(departmentsEX.toString())){
                             String departmentsEXSLIM = departmentsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] buildingsEXSLIMARRAY = departmentsEXSLIM.split("name:");
-                                writer.write("\nExcluded departments:\n");
+                                writer.write("\nExcluded departments:");
                                 writer.newLine();
                                 for (String buildingsEXSLIMARRAY1 : buildingsEXSLIMARRAY) {
                                     writer.write(buildingsEXSLIMARRAY1);
@@ -1215,7 +1218,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(JSSusersEX.toString())){
                             String JSSusersEXSLIM = JSSusersEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] JSSusersEXSLIMARRAY = JSSusersEXSLIM.split("name:");
-                                writer.write("\nExcluded JAMF users:\n");
+                                writer.write("\nExcluded JAMF users:");
                                 writer.newLine();
                                 for (String JSSusersEXSLIMARRAY1 : JSSusersEXSLIMARRAY) {
                                     writer.write(JSSusersEXSLIMARRAY1);
@@ -1227,7 +1230,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(JSSuser_groupsEX.toString())){
                             String JSSuser_groupsEXSLIM = JSSuser_groupsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] JSSuser_groupsEXSLIMARRAY = JSSuser_groupsEXSLIM.split("name:");
-                                writer.write("\nExcluded to JAMF user groups:\n");
+                                writer.write("\nExcluded JAMF user groups:");
                                 writer.newLine();
                                 for (String JSSuser_groupsEXSLIMARRAY1 : JSSuser_groupsEXSLIMARRAY) {
                                     writer.write(JSSuser_groupsEXSLIMARRAY1);
@@ -1238,7 +1241,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(usersEX.toString())){
                             String usersEXSLIM = usersEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] usersEXSLIMARRAY = usersEXSLIM.split("name:");
-                                writer.write("\nExcluded users:\n");
+                                writer.write("\nExcluded users:");
                                 writer.newLine();
                                 for (String usersEXSLIMARRAY1 : usersEXSLIMARRAY) {
                                     writer.write(usersEXSLIMARRAY1);
@@ -1250,7 +1253,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(user_groupsEX.toString())){
                             String user_groupsEXSLIM = user_groupsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] user_groupsEXSLIMARRAY = user_groupsEXSLIM.split("name:");
-                                writer.write("\nExcluded user groups:\n");
+                                writer.write("\nExcluded user groups:");
                                 writer.newLine();
                                 for (String user_groupsEXSLIMARRAY1 : user_groupsEXSLIMARRAY) {
                                     writer.write(user_groupsEXSLIMARRAY1);
@@ -1262,7 +1265,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(network_segmentsEX.toString())){
                             String network_segmentsEXSLIM = network_segmentsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] network_segmentsEXSLIMARRAY = network_segmentsEXSLIM.split("name:");
-                                writer.write("\nExcluded to Network Segements:\n");
+                                writer.write("\nExcluded Network Segements:");
                                 writer.newLine();
                                 for (String network_segmentsEXSLIMARRAY1 : network_segmentsEXSLIMARRAY) {
                                     writer.write(network_segmentsEXSLIMARRAY1);
@@ -1280,6 +1283,7 @@ EbooksCategoryButton.setSelected(false);
             else if (EbooksCategoryButton.isSelected()){
                 OutputMessage.setText( "Starting writing to the file " + timeStampPattern.format(java.time.LocalDateTime.now()) + " Ebooks.csv");
                 try (BufferedWriter writer = new BufferedWriter(new FileWriter(timeStampPattern.format(java.time.LocalDateTime.now()) + " Ebooks.csv"))) {
+                    
                     OutputMessage.setText( "Done writing to file " + timeStampPattern.format(java.time.LocalDateTime.now()) + " Ebooks.csv");
                     JSONObject jsonPolicy = new JSONObject(api.get("ebooks"));
                     JSONArray jsonPolicyArray = jsonPolicy.getJSONArray("ebooks");
@@ -1305,7 +1309,7 @@ EbooksCategoryButton.setSelected(false);
                         if (ALLcompscopechk == "false"){
                             Object ALLcompscoped = scope.get("computers").toString().replace("{", "").replace("}", "").replace("\"", "");
                             if (!"[]".equals(ALLcompscoped.toString())){
-                            writer.write("\n Scoped to Computers: \n");
+                            writer.write("\n Scoped to Computers: ");
                             writer.newLine();
                             String ALLcompscopedSLIM = ALLcompscoped.toString().replace("[", "").replace("]", "");
                             String[] ALLcompscopedARRAY = ALLcompscopedSLIM.split("name:");
@@ -1318,7 +1322,7 @@ EbooksCategoryButton.setSelected(false);
                             Object compscope = scope.get("computer_groups").toString().replace("{", "").replace("}", "").replace("\"", "");
                         if (!"[]".equals(compscope.toString())){
                             Object compscopeGRP = compscope.toString().replace("[", "").replace("]", "");
-                            writer.write("\nComputer Groups:\n");
+                            writer.write("\nComputer Groups:");
                             writer.newLine();
                             String compscopeGRPSLIM = compscopeGRP.toString().replace("[", "").replace("]", "");
                             String[] compscopeGRPSLIMARRAY = compscopeGRPSLIM.split("name:");
@@ -1338,7 +1342,7 @@ EbooksCategoryButton.setSelected(false);
                             if (!"[]".equals(ALLmobileScope.toString())){
                              String ALLmobileScopeSLIM = ALLmobileScope.toString().replace("[", "").replace("]", "");
                              String[] ALLmobileScopeSLIMARRAY = ALLmobileScopeSLIM.split("name:");
-                             writer.write("\nMobile Devices:\n");
+                             writer.write("\nMobile Devices:");
                              writer.newLine();
                              for (String ALLmobileScopeSLIMARRAY1 : ALLmobileScopeSLIMARRAY) {
                                     writer.write(ALLmobileScopeSLIMARRAY1);
@@ -1349,7 +1353,7 @@ EbooksCategoryButton.setSelected(false);
                             if (!"[]".equals(MobileGroupScope.toString())){
                             String MobileGroupSLIM = MobileGroupScope.toString().replace("[", "").replace("]", "");
                             String[] MobileGroupARRAY = MobileGroupSLIM.split("name:");
-                            writer.write("\nMobile Device Groups:\n");
+                            writer.write("\nMobile Device Groups:");
                             writer.newLine();
                                 for (String MobileGroupARRAY1 : MobileGroupARRAY) {
                                     writer.write(MobileGroupARRAY1);
@@ -1366,7 +1370,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(ALLjssUserScope.toString())){
                             String ALLjssUserScopeSLIM = ALLjssUserScope.toString().replace("[", "").replace("]", "");
                             String[] ALLjssUserScopeSLIMARRAY = ALLjssUserScopeSLIM.split("name:");
-                            writer.write("\nJAMF Users:\n");
+                            writer.write("\nJAMF Users:");
                             writer.newLine();
                                 for (String ALLjssUserScopeSLIMARRAY1 : ALLjssUserScopeSLIMARRAY) {
                                     writer.write(ALLjssUserScopeSLIMARRAY1);
@@ -1377,7 +1381,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(UserGroupScope.toString())){ 
                             String UserGroupScopeSLIM = UserGroupScope.toString().replace("[", "").replace("]", "");
                             String[] UserGroupScopeSLIMARRAY = UserGroupScopeSLIM.split("name:");
-                            writer.write("\nJAMF User Groups:\n");
+                            writer.write("\nJAMF User Groups:");
                             writer.newLine();
                                 for (String UserGroupScopeSLIMARRAY1 : UserGroupScopeSLIMARRAY) {
                                     writer.write(UserGroupScopeSLIMARRAY1);
@@ -1390,7 +1394,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(buildings.toString())){
                             String buildingsSLIM = buildings.toString().replace("[", "").replace("]", "");
                             String[] buildingsSLIMARRAY = buildingsSLIM.split("name:");
-                            writer.write("\nBuildings:\n");
+                            writer.write("\nBuildings:");
                             writer.newLine();
                                 for (String buildingsSLIMARRAY1 : buildingsSLIMARRAY) {
                                     writer.write(buildingsSLIMARRAY1);
@@ -1401,7 +1405,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(departments.toString())){
                             String departmentsSLIM = departments.toString().replace("[", "").replace("]", "");
                             String[] departmentsSLIMARRAY = departmentsSLIM.split("name:");
-                            writer.write("\nDepartments:\n");
+                            writer.write("\nDepartments:");
                             writer.newLine();
                                 for (String departmentsSLIMARRAY1 : departmentsSLIMARRAY) {
                                     writer.write(departmentsSLIMARRAY1);
@@ -1412,7 +1416,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(classes.toString())){
                             String classesSLIM = classes.toString().replace("[", "").replace("]", "");
                             String[] classesSLIMARRAY = classesSLIM.split("name:");
-                            writer.write("\nClasses:\n");
+                            writer.write("\nClasses:");
                             writer.newLine();
                                 for (String networksSLIMARRAY1 : classesSLIMARRAY) {
                                     writer.write(networksSLIMARRAY1);
@@ -1425,7 +1429,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(network_segments.toString())){
                             String networksSLIM = network_segments.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] networksSLIMARRAY = networksSLIM.split("name:");
-                            writer.write("\nNetwork Segments:\n");
+                            writer.write("\nlimited Network Segments:");
                             writer.newLine();
                                 for (String networksSLIMARRAY1 : networksSLIMARRAY) {
                                     writer.write(networksSLIMARRAY1);
@@ -1436,7 +1440,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(users.toString())){
                             String userLimitaitons1SLIM = limitations.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] userLimitaitons1SLIMARRAY = userLimitaitons1SLIM.split("name:");
-                            writer.write("\nLimited to Users:\n");
+                            writer.write("\nLimited to Users:");
                             writer.newLine();
                                 for (String userLimitaitons1SLIMARRAY1 : userLimitaitons1SLIMARRAY) {
                                     writer.write(userLimitaitons1SLIMARRAY1);
@@ -1447,7 +1451,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(userGroups.toString())){
                             String userGroupsSLIM = users.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] userGroupsSLIMARRAY = userGroupsSLIM.split("name:");
-                            writer.write("\nLimited User Groups:\n");
+                            writer.write("\nLimited User Groups:");
                             writer.newLine();
                                 for (String userGroupsSLIMARRAY1 : userGroupsSLIMARRAY) {
                                     writer.write(userGroupsSLIMARRAY1);
@@ -1458,7 +1462,7 @@ EbooksCategoryButton.setSelected(false);
                         JSONObject exclusions = scope.getJSONObject("exclusions");
                             Object ALLcompscoped = exclusions.get("computers");
                             if (!"[]".equals(ALLcompscoped.toString())){
-                            writer.write("\nExcluded Computers: \n");
+                            writer.write("\nExcluded Computers: ");
                             writer.newLine();
                             String ALLcompscopedSLIM = ALLcompscoped.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] ALLcompscopedARRAY = ALLcompscopedSLIM.split("name:");
@@ -1470,7 +1474,7 @@ EbooksCategoryButton.setSelected(false);
                             Object ALLcompGroup = exclusions.get("computer_groups");
                         if (!"[]".equals(ALLcompGroup.toString())){
                             Object compscopeGRP = ALLcompGroup.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
-                            writer.write("\nExcluded Computer Groups:\n");
+                            writer.write("\nExcluded Computer Groups:");
                             writer.newLine();
                             String compscopeGRPSLIM = compscopeGRP.toString().replace("[", "").replace("]", "");
                             String[] compscopeGRPSLIMARRAY = compscopeGRPSLIM.split("name:");
@@ -1484,7 +1488,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(mobile_devices.toString())){
                             String mobile_devicesSLIM = mobile_devices.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] mobile_devicesSLIMARRAY = mobile_devicesSLIM.split("name:");
-                            writer.write("\nExcluded Mobile Devices:\n");
+                            writer.write("\nExcluded Mobile Devices:");
                             writer.newLine();
                                 for (String mobile_devicesSLIMARRAY1 : mobile_devicesSLIMARRAY) {
                                     writer.write(mobile_devicesSLIMARRAY1);
@@ -1496,7 +1500,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(mobile_device_groups.toString())){
                             String mobile_device_groupsSLIM = mobile_device_groups.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] mobile_device_groupsSLIMARRAY = mobile_device_groupsSLIM.split("name:");
-                            writer.write("\nExcluded Mobile Device Groups:\n");
+                            writer.write("\nExcluded Mobile Device Groups:");
                             writer.newLine();
                                 for (String mobile_device_groupsSLIMARRAY1 : mobile_device_groupsSLIMARRAY) {
                                     writer.write(mobile_device_groupsSLIMARRAY1);
@@ -1507,7 +1511,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(buildingsEX.toString())){
                             String buildingsEXSLIM = buildingsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] buildingsEXSLIMARRAY = buildingsEXSLIM.split("name:");
-                                writer.write("\nExcluded buildings:\n");
+                                writer.write("\nExcluded buildings:");
                                 writer.newLine();
                                 for (String buildingsEXSLIMARRAY1 : buildingsEXSLIMARRAY) {
                                     writer.write(buildingsEXSLIMARRAY1);
@@ -1519,7 +1523,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(departmentsEX.toString())){
                             String departmentsEXSLIM = departmentsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] buildingsEXSLIMARRAY = departmentsEXSLIM.split("name:");
-                                writer.write("\nExcluded departments:\n");
+                                writer.write("\nExcluded departments:");
                                 writer.newLine();
                                 for (String buildingsEXSLIMARRAY1 : buildingsEXSLIMARRAY) {
                                     writer.write(buildingsEXSLIMARRAY1);
@@ -1530,7 +1534,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(JSSusersEX.toString())){
                             String JSSusersEXSLIM = JSSusersEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] JSSusersEXSLIMARRAY = JSSusersEXSLIM.split("name:");
-                                writer.write("\nExcluded JAMF users:\n");
+                                writer.write("\nExcluded JAMF users:");
                                 writer.newLine();
                                 for (String JSSusersEXSLIMARRAY1 : JSSusersEXSLIMARRAY) {
                                     writer.write(JSSusersEXSLIMARRAY1);
@@ -1542,7 +1546,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(JSSuser_groupsEX.toString())){
                             String JSSuser_groupsEXSLIM = JSSuser_groupsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] JSSuser_groupsEXSLIMARRAY = JSSuser_groupsEXSLIM.split("name:");
-                                writer.write("\nExcluded to JAMF user groups:\n");
+                                writer.write("\nExcluded to JAMF user groups:");
                                 writer.newLine();
                                 for (String JSSuser_groupsEXSLIMARRAY1 : JSSuser_groupsEXSLIMARRAY) {
                                     writer.write(JSSuser_groupsEXSLIMARRAY1);
@@ -1553,7 +1557,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(usersEX.toString())){
                             String usersEXSLIM = usersEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] usersEXSLIMARRAY = usersEXSLIM.split("name:");
-                                writer.write("\nExcluded users:\n");
+                                writer.write("\nExcluded users:");
                                 writer.newLine();
                                 for (String usersEXSLIMARRAY1 : usersEXSLIMARRAY) {
                                     writer.write(usersEXSLIMARRAY1);
@@ -1565,7 +1569,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(user_groupsEX.toString())){
                             String user_groupsEXSLIM = user_groupsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] user_groupsEXSLIMARRAY = user_groupsEXSLIM.split("name:");
-                                writer.write("\nExcluded user groups:\n");
+                                writer.write("\nExcluded user groups:");
                                 writer.newLine();
                                 for (String user_groupsEXSLIMARRAY1 : user_groupsEXSLIMARRAY) {
                                     writer.write(user_groupsEXSLIMARRAY1);
@@ -1623,7 +1627,7 @@ EbooksCategoryButton.setSelected(false);
                         if (ALLcompscopechk == "false"){
                              Object ALLcompscoped = scope.get("computers").toString().replace("{", "").replace("}", "").replace("\"", "");
                             if (!"[]".equals(ALLcompscoped.toString())){
-                            writer.write("\n Scoped to Computers: \n");
+                            writer.write("\n Computers:");
                             writer.newLine();
                             String ALLcompscopedSLIM = ALLcompscoped.toString().replace("[", "").replace("]", "");
                             String[] ALLcompscopedARRAY = ALLcompscopedSLIM.split("name:");
@@ -1636,7 +1640,7 @@ EbooksCategoryButton.setSelected(false);
                             Object compscope = scope.get("computer_groups").toString().replace("{", "").replace("}", "").replace("\"", "");
                         if (!"[]".equals(compscope.toString())){
                             Object compscopeGRP = compscope.toString().replace("[", "").replace("]", "");
-                            writer.write("\nComputer Groups:\n");
+                            writer.write("\nComputer Groups:");
                             writer.newLine();
                             String compscopeGRPSLIM = compscopeGRP.toString().replace("[", "").replace("]", "");
                             String[] compscopeGRPSLIMARRAY = compscopeGRPSLIM.split("name:");
@@ -1650,7 +1654,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(buildings.toString())){
                             String buildingsSLIM = buildings.toString().replace("[", "").replace("]", "");
                             String[] buildingsSLIMARRAY = buildingsSLIM.split("name:");
-                            writer.write("\nBuildings:\n");
+                            writer.write("\nBuildings:");
                             writer.newLine();
                                 for (String buildingsSLIMARRAY1 : buildingsSLIMARRAY) {
                                     writer.write(buildingsSLIMARRAY1);
@@ -1661,7 +1665,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(departments.toString())){
                             String departmentsSLIM = departments.toString().replace("[", "").replace("]", "");
                             String[] departmentsSLIMARRAY = departmentsSLIM.split("name:");
-                            writer.write("\nDepartments:\n");
+                            writer.write("\nDepartments:");
                             writer.newLine();
                                 for (String departmentsSLIMARRAY1 : departmentsSLIMARRAY) {
                                     writer.write(departmentsSLIMARRAY1);
@@ -1683,7 +1687,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(network_segments.toString())){
                             String networksSLIM = network_segments.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] networksSLIMARRAY = networksSLIM.split("name:");
-                            writer.write("\nNetwork Segments:\n");
+                            writer.write("\nLimited to Network Segments:");
                             writer.newLine();
                                 for (String networksSLIMARRAY1 : networksSLIMARRAY) {
                                     writer.write(networksSLIMARRAY1);
@@ -1695,7 +1699,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(users.toString())){
                             String userLimitaitons1SLIM = limitations.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] userLimitaitons1SLIMARRAY = userLimitaitons1SLIM.split("name:");
-                            writer.write("\nLimited to Users:\n");
+                            writer.write("\nLimited to Users:");
                             writer.newLine();
                                 for (String userLimitaitons1SLIMARRAY1 : userLimitaitons1SLIMARRAY) {
                                     writer.write(userLimitaitons1SLIMARRAY1);
@@ -1707,7 +1711,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(userGroups.toString())){
                             String userGroupsSLIM = users.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] userGroupsSLIMARRAY = userGroupsSLIM.split("name:");
-                            writer.write("\nLimited User Groups:\n");
+                            writer.write("\nLimited User Groups:");
                             writer.newLine();
                                 for (String userGroupsSLIMARRAY1 : userGroupsSLIMARRAY) {
                                     writer.write(userGroupsSLIMARRAY1);
@@ -1719,7 +1723,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(ibeacons.toString())){
                         String ibeaconsEXSLIM = ibeacons.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                         String[] ibeaconsEXSLIMARRAY = ibeaconsEXSLIM.split("name:");
-                        writer.write("\nExcluded iBeacons:\n ");
+                        writer.write("\nExcluded iBeacons: ");
                         writer.newLine();
                                     for (String ibeaconsEXSLIMARRAY1 : ibeaconsEXSLIMARRAY) {
                                     writer.write(ibeaconsEXSLIMARRAY1);
@@ -1731,7 +1735,7 @@ EbooksCategoryButton.setSelected(false);
                         
                             Object ALLcompscoped = exclusions.get("computers");
                             if (!"[]".equals(ALLcompscoped.toString())){
-                            writer.write("\nExcluded Computers: \n");
+                            writer.write("\nExcluded Computers: ");
                             writer.newLine();
                             String ALLcompscopedSLIM = ALLcompscoped.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] ALLcompscopedARRAY = ALLcompscopedSLIM.split("name:");
@@ -1743,7 +1747,7 @@ EbooksCategoryButton.setSelected(false);
                             Object ALLcompGroup = exclusions.get("computer_groups");
                         if (!"[]".equals(ALLcompGroup.toString())){
                             Object compscopeGRP = ALLcompGroup.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
-                            writer.write("\nExcluded Computer Groups:\n");
+                            writer.write("\nExcluded Computer Groups:");
                             writer.newLine();
                             String compscopeGRPSLIM = compscopeGRP.toString().replace("[", "").replace("]", "");
                             String[] compscopeGRPSLIMARRAY = compscopeGRPSLIM.split("name:");
@@ -1757,7 +1761,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(buildingsEX.toString())){
                             String buildingsEXSLIM = buildingsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] buildingsEXSLIMARRAY = buildingsEXSLIM.split("name:");
-                                writer.write("\nExcluded buildings:\n");
+                                writer.write("\nExcluded buildings:");
                                 writer.newLine();
                                 for (String buildingsEXSLIMARRAY1 : buildingsEXSLIMARRAY) {
                                     writer.write(buildingsEXSLIMARRAY1);
@@ -1769,7 +1773,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(departmentsEX.toString())){
                             String departmentsEXSLIM = departmentsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] buildingsEXSLIMARRAY = departmentsEXSLIM.split("name:");
-                                writer.write("\nExcluded departments:\n");
+                                writer.write("\nExcluded departments:");
                                 writer.newLine();
                                 for (String buildingsEXSLIMARRAY1 : buildingsEXSLIMARRAY) {
                                     writer.write(buildingsEXSLIMARRAY1);
@@ -1781,7 +1785,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(usersEX.toString())){
                             String usersEXSLIM = usersEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] usersEXSLIMARRAY = usersEXSLIM.split("name:");
-                                writer.write("\nExcluded users:\n");
+                                writer.write("\nExcluded users:");
                                 writer.newLine();
                                 for (String usersEXSLIMARRAY1 : usersEXSLIMARRAY) {
                                     writer.write(usersEXSLIMARRAY1);
@@ -1793,7 +1797,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(user_groupsEX.toString())){
                             String user_groupsEXSLIM = user_groupsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] user_groupsEXSLIMARRAY = user_groupsEXSLIM.split("name:");
-                                writer.write("\nExcluded user groups:\n");
+                                writer.write("\nExcluded user groups:");
                                 writer.newLine();
                                 for (String user_groupsEXSLIMARRAY1 : user_groupsEXSLIMARRAY) {
                                     writer.write(user_groupsEXSLIMARRAY1);
@@ -1805,7 +1809,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(network_segmentsEX.toString())){
                             String network_segmentsEXSLIM = network_segmentsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                             String[] network_segmentsEXSLIMARRAY = network_segmentsEXSLIM.split("name:");
-                                writer.write("\nExcluded to Network Segements:\n");
+                                writer.write("\nExcluded to Network Segements:");
                                 writer.newLine();
                                 for (String network_segmentsEXSLIMARRAY1 : network_segmentsEXSLIMARRAY) {
                                     writer.write(network_segmentsEXSLIMARRAY1);
@@ -1816,7 +1820,7 @@ EbooksCategoryButton.setSelected(false);
                         if (!"[]".equals(ibeaconsEX.toString())){
                         String ibeaconsEXSLIM = ibeaconsEX.toString().replace("{", "").replace("}", "").replace("\"", "").replace("[", "").replace("]", "");
                         String[] ibeaconsEXSLIMARRAY = ibeaconsEXSLIM.split("name:");
-                        writer.write("\nExcluded iBeacons:\n ");
+                        writer.write("\nExcluded iBeacons:");
                         writer.newLine();
                                     for (String ibeaconsEXSLIMARRAY1 : ibeaconsEXSLIMARRAY) {
                                     writer.write(ibeaconsEXSLIMARRAY1);
