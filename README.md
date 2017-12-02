@@ -13,13 +13,12 @@ Requirements: JDK and JRE (Written in version 1.8)
 
 Windows/MacOS: Unzip then go to /dist/MobileDeviceTool.jar and double click.
 
+Linux: Unzip then go to /dist/MobileDeviceTool.jar....Has not been tested in linux, however if you have the most recent versions of the JRE and JDK then it should run fine. It does require a GUI. If the demand is there, it could easily be converted to a script.
+
 NOTE: When it runs, if it can appear to freeze while wrting the file. It will tell you when it is done so do not worry it is just doing work in the background. Adding a progress bar is in the works, however it has not been implemented. 
-
-Linux: Has not been tested in linux, however if you have the most recent versions of the JRE and JDK then it should run fine. It does require a GUI. If the demand is there, it could easily be converted to a script.
-
 
 Future Plans for v1.2: To be able to run a report that shows it organized by groups. Also, formatting the .csv output better
 
 Any suggestions or ideas for functionality are welcomed!
 
-Anybody who can help break out the program into functions that would be helpful. I started one way and now it is hard to go back, however it is a pain to make changes. Functions would make this easier.
+Anybody who can help break out the program into functions that would be helpful. I started one way and now it is hard to go back, however it is a pain to make changes. Functions would make this easier if even possible at this point
