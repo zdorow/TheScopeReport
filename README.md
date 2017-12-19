@@ -9,6 +9,10 @@ Mac Applications,
 Mac Configuration Profiles,
 Ebooks
 
+NEW: What APPs are scoped to which Mobile Device Groups!
+
+NEW: Progress bar! 
+
 Requirements: JDK and JRE (Written in version 1.8)
 
 Windows/MacOS: Unzip then go to /dist/MobileDeviceTool.jar and double click.
@@ -17,10 +21,8 @@ Linux: Unzip then go to /dist/MobileDeviceTool.jar....Has not been tested in lin
 
 NOTE: When it runs, if it can appear to freeze while wrting the file. It will tell you when it is done so do not worry it is just doing work in the background. Adding a progress bar is in the works, however it has not been implemented. 
 
-Future Plans for v2.0: To be able to run a report that shows it organized by groups, debating on dealing with exclusions and limitations. Dont think it is needed, however it could be done..... Added progress bar.
-
-2.0 is up, however it is far from done. It was rewrite and only mobile devices work for now......
+Future Plans for v2.0: To be able to run a report that shows it organized by groups (Partially implemented), debating on dealing with exclusions and limitations. Dont think it is needed, however it could be done..... Added progress bar (DONE!).
 
 Any suggestions or ideas for functionality are welcomed!
 
-Anybody who can help break out the program into functions that would be helpful. I started one way and now it is hard to go back, however it is a pain to make changes. Functions would make this easier if even possible at this point
+Anybody who can help break out the program into classes that would be helpful. I started one way and now it is hard to go back, however it is a pain to make changes. Seprate classes and functions would make this easier if even possible at this point.
