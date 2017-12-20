@@ -1,9 +1,9 @@
 # TheScopeReport
-The Scope Report is a java program that uses Jamf Pro API calls to collect and orgainize specific information about how things are scoped in a Jamf Pro instance. It can be run on any computer that can access Jamf Pro from their web browser and any user with read permission. It makes the .csv file inside the folder it was run in so it is easy to import wherever desired.
+The Scope Report is a java program that uses Jamf Pro API calls to collect and organize specific information about how things are scoped in a Jamf Pro instance. It can be run on any computer that can access Jamf Pro from their web browser and any user with read permission. It makes the .csv file inside the folder it was run in so it is easy to import wherever desired.
 
 Currently it runs a full scope report, leaving out blank fields, for the following Jamf Pro categories: 
 - Policies
-- Mobile Applicaitons
+- Mobile Applications
 - Mobile Configuration Profiles
 - Mac Applications
 - Mac Configuration Profiles
@@ -33,6 +33,6 @@ Future Plans: The User Groups scope search function, the ability to specify whic
 
 Any suggestions or ideas for functionality are welcomed!
 
-Since the output is CSV we can open the file produced in a text editor or in Excel (reccomended). It does looks much better when imported into Excel so if you do not want to manually adjust the columns size then use the method shown on this site: https://www.hesa.ac.uk/support/user-guides/import-csv
+Since the output is CSV we can open the file produced in a text editor or in Excel (recommended). It does looks much better when imported into Excel so if you do not want to manually adjust the columns size then use the method shown on this site: https://www.hesa.ac.uk/support/user-guides/import-csv
 
 ________________________________________________________________________________________________________
