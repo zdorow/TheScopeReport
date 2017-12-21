@@ -23,7 +23,7 @@ Currently it runs a full scope report, leaving out blank fields, for the followi
 
 **NEW: Handy Dandy Progress bar! 
 
-Note: Any Device group search takes a bit of time and a straight scope report is a lot quicker. On my test cloud instance the Group Searches take about a 1 minute each. In larger environments it could take a while. It is a steady stream of API calls that can vary in size for data returned, however the largest data stream return I have seen is 1 MB. Which should be very manageable in most environments. The ability to search only specific device group names will break up calls for larger environments if needed. Running directly on the same server as Jamf Pro would decrease network traffic and would already all the Java needed. 
+Note: Any Device group search takes a bit of time and a straight scope report is a lot quicker. On my test cloud instance the Group Searches take about a 1 minute each. In larger environments it could take a while. It is a steady stream of API calls that can vary in size for data returned, however the largest data stream return I have seen is 1 MB. Which should be very manageable in most environments. The ability to search only specific device group names will break up calls for larger environments if needed. Running directly on the same server as Jamf Pro would decrease network traffic and would already have all the Java needed. 
 
 ----------------------------------------------------------------------------------------------------
 
@@ -35,7 +35,7 @@ Linux: Unzip then go to /dist/MobileDeviceTool.jar....Has not been tested in lin
 
 -----------------------------------------------------------------------------------------------------
 
-If the demand is there, it could easily be converted to a script. So let me know!
+If the demand is there, it could easily be converted to a gui-less app. So let me know!
 
 Future Plans: The User Groups scope search function, the ability to specify which group names to search, better error handling.
 
