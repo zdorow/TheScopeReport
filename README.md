@@ -15,19 +15,23 @@ Currently it runs a full scope report, leaving out blank fields, for the followi
 - Mac Applications
 - Mac Configuration Profiles
 - Ebooks
-- Show what Apps, Ebooks, and Profiles are scoped to which Mobile Device Groups. 
+- Show what is scoped to Mobile Device Groups. 
       (Does not show limitations or exclusions, this can be added if requested)
-- Show what Apps, Ebooks, and Profiles are scoped to which Computer Device Groups
+- Show what is scoped to Computer Device Groups
       (Does not show limitations or exclusions, this can be added if requested)
 
 Features: Handy Dandy Progress bar! 
 
-**NEW: Show what Apps, Ebooks, and Mobile Profiles are scoped to which User Groups
-(Does not show limitations or exclusions, this can be added if requested. Does not work for MacOS Profiles and Policies, details in the warning.)
-      
-**Warning!! The API endpoint for MacOS user and user group searches is non-existent. The only search that returns correctly is User searches for MacOS profiles. This means the return data for users with MacOS unreliable or not at all, especially concerning user groups. A product issue has been filed and if the endpoint is fixed this program will be updated.  
+**NEW: ERROR HANDLING! It will now tell you when you have the URL or the username/password incorrect. If you see the "Please file an issue error" please feel free to file an issue. Including the search you were performing and any data for recreation would be helpful in figuring out a fix. 
 
-Note: Any Device group search takes a bit of time and a straight scope report is a lot quicker. On my test cloud instance, the Group Searches take about a 1 minute each. In larger environments it could take a while. It is a steady stream of API calls that can vary in size for data returned, however the largest data stream return I have seen is 1 MB. Which should be very manageable in most environments. The ability to search only specific device group names will break up calls for larger environments if needed. Running directly on the same server as Jamf Pro would decrease network traffic and would already have all the Java needed. 
+**NEW: Show what Apps, Ebooks, and Mobile Profiles are scoped to which User Groups
+(Does not show limitations or exclusions, this can be added if requested. Does not work for MacOS Profiles and Policies due to a lack of an API endpoint, details in the warning.)
+      
+**Warning!! The API endpoint for MacOS (computer) policies and profiles for user group searches is non-existent. The only search that works for user's scoped searches is for MacOS profiles, it does not work for users scoped to policies. This means the return data for users with MacOS unreliable or not at all, especially concerning user groups. A product issue has been filed and if the endpoint is fixed this program will be updated. As a side note all iOS (mobile) searches work great!
+
+Note: Any Device group search takes a bit of time and a straight scope report is a lot quicker. On my test cloud instance, the Group Searches take about a 1 minute each. In larger environments it could take a while. It is a steady stream of (non-concurrent) API calls that can vary in size for data returned, however the largest data stream return I have seen is 1 MB. Which should be very manageable in most environments. The ability to search only specific device group names would break up calls for larger environments if needed. So let me know! 
+
+Running directly on the same server as Jamf Pro would decrease network traffic and would already have all the Java needed. 
 
 ----------------------------------------------------------------------------------------------------
 
