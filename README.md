@@ -25,7 +25,7 @@ Features: Handy Dandy Progress bar!
 **NEW: ERROR HANDLING! It will now tell you when you have the URL or the username/password incorrect. If you see the "Please file an issue error" please feel free to file an issue. Including the search you were performing and any data for recreation would be helpful in figuring out a fix. 
 
 **NEW: Show what Apps, Ebooks, and Mobile Profiles are scoped to which User Groups
-(Does not show limitations or exclusions, this can be added if requested. Does not work for MacOS Profiles and Policies due to a lack of an API endpoint, details in the warning.)
+(Does not show LDAP users, limitations or exclusions, this can be added if requested. Does not work for MacOS Profiles and Policies due to a lack of an API endpoint, details in the warning.)
       
 **Warning!! The API endpoint for MacOS (computer) policies and profiles for user group searches is non-existent. The only search that works for user's scoped searches is for MacOS profiles, it does not work for users scoped to policies. This means the return data for users with MacOS unreliable or not at all, especially concerning user groups. A product issue has been filed and if the endpoint is fixed this program will be updated. As a side note all iOS (mobile) searches work great!
 
