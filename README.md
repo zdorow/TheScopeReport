@@ -37,6 +37,8 @@ Running directly on the same server as Jamf Pro would decrease network traffic a
 
 Requirements: JDK and JRE (Written in version 1.8) Preliminary testing in Java 9 showed no issues. 
 
+##To run simply use the start up scripts for your system! Otherwise we can do the following:
+
 Windows/MacOS: Unzip then go to /dist/MobileDeviceTool.jar and double click.
 
 Linux: Unzip then go to /dist/MobileDeviceTool.jar....Has not been tested in linux, however if you have the most recent versions of the JRE and JDK then it should run fine. It does require a GUI. 
