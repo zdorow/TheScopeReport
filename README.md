@@ -1,7 +1,8 @@
-# TheScopeReport
+![logo](/Scope.png)
+### TheScopeReport
 The Scope Report is a java program that uses Jamf Pro API calls to collect and organize specific information about how pretty much everything is scoped in Jamf Pro. It can be run from any computer that can access Jamf Pro from their web browser and any user with read permission. It makes the .csv file inside the folder it was run in so it is easy to import wherever desired.
 
-The needs it is fulfilling: 
+The need it is fulfilling: 
 
  - The specific reporting of scoping that is not available in a Jamf Pro summary.
 
@@ -14,20 +15,23 @@ Currently it runs a full scope report, leaving out blank fields, for the followi
 - Mac Applications
 - Mac Configuration Profiles
 - Ebooks
-
-**NEW: Show what Apps, Ebooks, and Profiles are scoped to which Mobile Device Groups! 
+- Show what Apps, Ebooks, and Profiles are scoped to which Mobile Device Groups. 
+      (Does not show limitations or exclusions, this can be added if requested)
+- Show what Apps, Ebooks, and Profiles are scoped to which Computer Device Groups
       (Does not show limitations or exclusions, this can be added if requested)
 
-**NEW: Show what Apps, Ebooks, and Profiles are scoped to which Computer Device Groups!
+Features: Handy Dandy Progress bar! 
+
+**NEW: Show what Apps, Ebooks, and Mobile Profiles are scoped to which User Groups
       (Does not show limitations or exclusions, this can be added if requested)
+      
+**Warning!! The API endpoint for MacOS user and user group searches is non-existent. The only search that returns correctly is User searches for MacOS profiles. This means the return data for users with MacOS unreliable especially concerning user groups. A product issue has been filed. 
 
-**NEW: Handy Dandy Progress bar! 
-
-Note: Any Device group search takes a bit of time and a straight scope report is a lot quicker. On my test cloud instance the Group Searches take about a 1 minute each. In larger environments it could take a while. It is a steady stream of API calls that can vary in size for data returned, however the largest data stream return I have seen is 1 MB. Which should be very manageable in most environments. The ability to search only specific device group names will break up calls for larger environments if needed. Running directly on the same server as Jamf Pro would decrease network traffic and would already have all the Java needed. 
+Note: Any Device group search takes a bit of time and a straight scope report is a lot quicker. On my test cloud instance, the Group Searches take about a 1 minute each. In larger environments it could take a while. It is a steady stream of API calls that can vary in size for data returned, however the largest data stream return I have seen is 1 MB. Which should be very manageable in most environments. The ability to search only specific device group names will break up calls for larger environments if needed. Running directly on the same server as Jamf Pro would decrease network traffic and would already have all the Java needed. 
 
 ----------------------------------------------------------------------------------------------------
 
-Requirements: JDK and JRE (Written in version 1.8)
+Requirements: JDK and JRE (Written in version 1.8) Preliminary testing in Java 9 showed no issues. 
 
 Windows/MacOS: Unzip then go to /dist/MobileDeviceTool.jar and double click.
 
