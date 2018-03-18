@@ -37,11 +37,16 @@ Running directly on the same server as Jamf Pro would decrease network traffic a
 
 Requirements: JDK and JRE (Written in version 1.8) Preliminary testing in Java 9 showed no issues. 
 
-##To run simply use the start up scripts for your system! Otherwise we can do the following:
+**To Launch the APP:
 
-Windows/MacOS: Unzip then go to /dist/MobileDeviceTool.jar and double click.
+Windows: Download Windows version and run the Start_Windows.bat or go to /dist/MobileDeviceTool.jar and double click.
 
-Linux: Unzip then go to /dist/MobileDeviceTool.jar....Has not been tested in linux, however if you have the most recent versions of the JRE and JDK then it should run fine. It does require a GUI. 
+MacOS: Download Mac version. Unzip and double click the MacOS_Launcher or go to /dist/MobileDeviceTool.jar and double click.
+
+Linux: Download Linux version. Unzip, then use java -jar to open. 
+EXAMPLE: java -jar '/home/YOU/TheScopeReport/dist/TheScopeReport.jar'....Has not been tested much in linux, however if you have the most recent versions of the JRE and JDK then it should run fine. It does not seem to launch correctly if you double click on it. We must use java -jar from terminal. It does require a GUI. 
+
+The different versions are for ease of launching the app. They are all the same if you go to /dist and use java -jar to run the .jar
 
 -----------------------------------------------------------------------------------------------------
 
