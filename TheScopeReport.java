@@ -28,7 +28,7 @@ import javafx.stage.Stage;
 import org.json.*;
 /**
  *
- * @author ZD
+ * @author Zach Dorow
  */
 public class TheScopeReport extends Application {
         public static void main(String[] args)
