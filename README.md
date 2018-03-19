@@ -43,7 +43,9 @@ Requirements: JDK and JRE (Written in version 1.8) Preliminary testing in Java 9
 -Windows: Download Windows version and run the Start_Windows.bat or go to /dist/MobileDeviceTool.jar and double click.
 
 -MacOS: Download Mac version. Unzip and double click the MacOS_Launcher or go to /dist/MobileDeviceTool.jar and double click.
-If we would like to download it as a standalone MacOS App the here is a link: https://www.dropbox.com/s/cgal9hsvjb8u2wz/TheScopeReport.zip?dl=0
+
+Dont want to download JAVA?? Here is another option: 
+To download it as a standalone MacOS App the here is a link: https://www.dropbox.com/s/cgal9hsvjb8u2wz/TheScopeReport.zip?dl=0
 That will save the files to the desktop. 
 
 -Linux: Download Linux version. Unzip, then use java -jar to open /dist/MobileDeviceTool.jar 
