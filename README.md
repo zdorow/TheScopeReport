@@ -1,4 +1,5 @@
 ![logo](/Scope.png)
+
 ### TheScopeReport
 The Scope Report is a java program that uses Jamf Pro API calls to collect and organize specific information about how everything is scoped in your Jamf Pro environment. It can be run from any computer that can access Jamf Pro from their web browser and any user with  at least read permission. It makes the .csv file inside the folder it was run in so it is easy to import wherever desired.
 
@@ -42,6 +43,8 @@ Requirements: JDK and JRE (Written in version 1.8) Preliminary testing in Java 9
 -Windows: Download Windows version and run the Start_Windows.bat or go to /dist/MobileDeviceTool.jar and double click.
 
 -MacOS: Download Mac version. Unzip and double click the MacOS_Launcher or go to /dist/MobileDeviceTool.jar and double click.
+If we would like to download it as a standalone MacOS App the here is a link: https://www.dropbox.com/s/cgal9hsvjb8u2wz/TheScopeReport.zip?dl=0
+That will save the files to the desktop. 
 
 -Linux: Download Linux version. Unzip, then use java -jar to open /dist/MobileDeviceTool.jar 
 
