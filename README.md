@@ -23,6 +23,8 @@ Currently it runs a full scope report, leaving out blank fields, for the followi
 
 Features: Handy Dandy Progress bar! 
 
+****NEW: NO Java needed if you use the Mac APP *****
+
 **NEW: ERROR HANDLING! It will now tell you when you have the URL or the username/password incorrect. If you see the "Please file an issue error" please feel free to file an issue. Including the search you were performing and any data for recreation would be helpful in figuring out a fix. 
 
 **NEW: Show what Apps, Ebooks, and Mobile Profiles are scoped to which User Groups
@@ -38,7 +40,9 @@ Running directly on the same server as Jamf Pro would decrease network traffic a
 
 Requirements: JDK and JRE (Written in version 1.8) Preliminary testing in Java 9 showed no issues. 
 
-*****To Launch the APP:*****
+****NEW: NO Java needed if you use the Mac APP *****
+
+*****To Launch:*****
 
 -Windows: Download Windows version and run the Start_Windows.bat or go to /dist/MobileDeviceTool.jar and double click.
 
