@@ -37,9 +37,9 @@ Running directly on the same server as Jamf Pro would decrease network traffic a
 
 ----------------------------------------------------------------------------------------------------
 
-:heavy_exclamation_mark:_Requirements: JDK and JRE (Written in version 1.8) Preliminary testing in Java 9 showed no issues.
+:heavy_exclamation_mark:Requirements: JDK and JRE (Written in version 1.8) Preliminary testing in Java 9 showed no issues.
 
-:heavy_exclamation_mark::heavy_exclamation_mark:NEW: NO Java needed if you use the Mac APP
+:heavy_exclamation_mark::heavy_exclamation_mark:NEW: No Java needed if you use the Mac APP
 
 *****To Launch:*****
 
@@ -47,7 +47,7 @@ Running directly on the same server as Jamf Pro would decrease network traffic a
 
 -MacOS: Download Mac version. Unzip and double click the MacOS_Launcher or go to /dist/MobileDeviceTool.jar and double click.
 
->Dont want to download JAVA?? Use the APP it comes with all it needs!
+>Dont want to download JAVA?? Use the App it comes with all it needs!
 
 -Linux: Download Linux version. Unzip, then use java -jar to open /dist/MobileDeviceTool.jar 
 
