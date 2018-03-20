@@ -37,9 +37,9 @@ Running directly on the same server as Jamf Pro would decrease network traffic a
 
 ----------------------------------------------------------------------------------------------------
 
-:heavy_exclamation_mark:Requirements: JDK and JRE (Written in version 1.8) Preliminary testing in Java 9 showed no issues.
+Requirements: JDK and JRE (Written in version 1.8) Preliminary testing in Java 9 showed no issues.
 
-:heavy_exclamation_mark::heavy_exclamation_mark:NEW: No Java needed if you use the Mac APP
+**NEW: No Java needed if you use the Mac APP
 
 *****To Launch:*****
 
