@@ -22,7 +22,7 @@ Currently it runs a full scope report, leaving out blank fields, for the followi
 
 Features: Handy Dandy Progress bar!
 
-***NEW: NO Java needed if you use the Mac APP***
+***NEW: No Java needed if you use the Mac App***
 
 **NEW: ERROR HANDLING! It will now tell you when you have the URL or the username/password incorrect. If you see the "Please file an issue error" please feel free to file an issue. Including the search you were performing and any data for recreation would be helpful in figuring out a fix. 
 
