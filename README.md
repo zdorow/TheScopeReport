@@ -71,6 +71,6 @@ Future Plans: The User Groups scope search function, the ability to specify whic
 
 Any suggestions or ideas for functionality are welcomed!
 
-Since the output is CSV we can open the file produced in a text editor or in Excel (recommended). It does size the columns when imported into Excel. If you do not want to manually adjust the columns size then one option is to use the method shown on this site: (https://www.hesa.ac.uk/support/user-guides/import-csv)
+Since the output is CSV we can open the file produced in a text editor or in Excel (recommended). It does size the columns when imported into Excel. If you do not want to manually adjust the columns size then one option is to use the method shown on this site: [Link to import .csv guide](https://www.hesa.ac.uk/support/user-guides/import-csv)
 
 ________________________________________________________________________________________________________
