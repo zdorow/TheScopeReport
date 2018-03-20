@@ -45,11 +45,19 @@ Running directly on the same server as Jamf Pro would decrease network traffic a
 
 -Windows: Download Windows version and run the Start_Windows.bat or go to /dist/MobileDeviceTool.jar and double click.
 
+[Windows Download](TheScopeReport_Windows.zip)
+
 -MacOS: Download Mac version. Unzip and double click the MacOS_Launcher or go to /dist/MobileDeviceTool.jar and double click.
+
+[MacOS Download](TheScopeReport_MacOS.zip)
 
 >Dont want to download JAVA?? Use the App it comes with all it needs!
 
+[MacOS App Download](TheScopeReport_MacOS_APP.zip)
+
 -Linux: Download Linux version. Unzip, then use java -jar to open /dist/MobileDeviceTool.jar 
+
+[Linux Download](TheScopeReport_Linux.zip)
 
 EXAMPLE: java -jar '/home/jamfuser/TheScopeReport/dist/TheScopeReport.jar'....Has not been tested much in linux, however if you have the most recent versions of the JRE and JDK then it should run fine. It does not launch correctly if you double click (without a jar launcher) on it. It needs to be run using java -jar from terminal. It does require a GUI. 
 
@@ -63,6 +71,6 @@ Future Plans: The User Groups scope search function, the ability to specify whic
 
 Any suggestions or ideas for functionality are welcomed!
 
-Since the output is CSV we can open the file produced in a text editor or in Excel (recommended). It does size the columns when imported into Excel. If you do not want to manually adjust the columns size then one option is to use the method shown on this site: https://www.hesa.ac.uk/support/user-guides/import-csv
+Since the output is CSV we can open the file produced in a text editor or in Excel (recommended). It does size the columns when imported into Excel. If you do not want to manually adjust the columns size then one option is to use the method shown on this site: (https://www.hesa.ac.uk/support/user-guides/import-csv)
 
 ________________________________________________________________________________________________________
