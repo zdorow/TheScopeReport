@@ -51,7 +51,7 @@ Running directly on the same server as Jamf Pro would decrease network traffic a
 
 [MacOS Download](TheScopeReport_MacOS.zip)
 
->Dont want to download JAVA?? Use the App it comes with all it needs!
+-Dont want to download Java? Use the App!
 
 [MacOS App Download](TheScopeReport_MacOS_APP.zip)
 
