@@ -59,7 +59,7 @@ Requirements: JDK and JRE (Written in version 1.8) Preliminary testing in Java 9
 
 EXAMPLE: java -jar '/home/jamfuser/TheScopeReport/dist/TheScopeReport.jar'....Has not been tested much in linux, however if you have the most recent versions of the JRE and JDK then it should run fine. It does not launch correctly if you double click (without a jar launcher) on it. It needs to be run using java -jar from terminal. It does require a GUI. 
 
-The different versions are for ease of launching outside of using the standalone app. They are all the same if you go to /dist and use java -jar or a jar launcher to run the .jar
+The different versions are for ease of launching outside of using the standalone app. They are all the same if you go to /dist and use java -jar or a Jar launcher to run the .jar
 
 -----------------------------------------------------------------------------------------------------
 
