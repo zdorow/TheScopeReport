@@ -6,7 +6,7 @@ The need it is fulfilling:
 
  - The specific reporting of scoping that is not available in a Jamf Pro summary.
 
- - The feature request for checking what is scoped to a group without manually searching thorough the items or digging up a lengthy MySQL query. 
+ - The feature request for checking what is scoped to a device or computer group without painstakingly searching through the items or digging up a lengthy MySQL query. 
 
 Currently it runs a full scope report, leaving out blank fields, for the following Jamf Pro categories: 
 - Policies
