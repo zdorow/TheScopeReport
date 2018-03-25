@@ -63,7 +63,7 @@ The different versions are for ease of launching outside of using the standalone
 
 -----------------------------------------------------------------------------------------------------
 
-If the demand is there, it could easily be converted to a gui-less app. So let me know!
+If the demand is there this could easily be converted to a gui-less app. So, let me know!
 
 Any suggestions or ideas for functionality are welcomed!
 
