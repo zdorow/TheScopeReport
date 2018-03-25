@@ -22,12 +22,12 @@ Features: Handy Dandy Progress bar!
 
 ***NEW: No Java needed if you use the Mac App***
 
-**NEW:** ERROR HANDLING! It will now tell you when you have the URL or the username/password incorrect. If you see the "Please file an issue error" please feel free to file an issue. Including the search you were performing and any data for recreation would be helpful in figuring out a fix. 
+***NEW:*** ERROR HANDLING! It will now tell you when you have the URL or the username/password incorrect. If you see the "Please file an issue error" please feel free to file an issue. Including the search you were performing and any data for recreation would be helpful in figuring out a fix. 
 
-**NEW:** Show what Apps, Ebooks, and Mobile Profiles are scoped to which User Groups
+***NEW:*** Show what Apps, Ebooks, and Mobile Profiles are scoped to which User Groups
 (Does not show LDAP users, limitations or exclusions, this can be added if requested. Does not work for MacOS Profiles and Policies due to a lack of an API endpoint, details in the warning.)
       
-**Warning!!** The API endpoint for MacOS (computer) policies and profiles for user group searches is non-existent. The only search that works for user's scoped searches is for MacOS profiles and for Mac Apps, it does not work for users scoped to policies and only pulls one user group for profiles. A product issue has been filed and if the endpoint is fixed this program will be updated. As a side note all iOS (mobile) searches work great!
+***Warning!!*** The API endpoint for MacOS (computer) policies and profiles for user group searches is non-existent. The only search that works for user's scoped searches is for MacOS profiles and for Mac Apps, it does not work for users scoped to policies and only pulls one user group for profiles. A product issue has been filed and if the endpoint is fixed this program will be updated. As a side note all iOS (mobile) searches work great!
 
 **Note:** Any Device group search takes a bit of time and a straight scope report is a lot quicker. On my test cloud instance, the Group Searches take about a 1 minute each. In larger environments it could take a while. It is a steady stream of (non-concurrent) API calls that can vary in size for data returned, however the largest data stream return I have seen is 1 MB. Which should be very manageable in most environments. The ability to search only specific device group names would break up calls for larger environments if needed. So let me know! 
 
@@ -37,7 +37,7 @@ Running directly on the same server as Jamf Pro would decrease network traffic a
 
 Requirements: JDK and JRE (Written in version 1.8) Preliminary testing in Java 9 showed no issues.
 
-**NEW: No Java needed if you use the Mac APP**
+***NEW: No Java needed if you use the Mac APP***
 
 ***To Launch:***
 
