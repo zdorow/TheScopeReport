@@ -22,14 +22,14 @@ Features: Handy Dandy Progress bar!
 
 ***NEW: No Java needed if you use the Mac App***
 
-**NEW: ERROR HANDLING! It will now tell you when you have the URL or the username/password incorrect. If you see the "Please file an issue error" please feel free to file an issue. Including the search you were performing and any data for recreation would be helpful in figuring out a fix. 
+**NEW:** ERROR HANDLING! It will now tell you when you have the URL or the username/password incorrect. If you see the "Please file an issue error" please feel free to file an issue. Including the search you were performing and any data for recreation would be helpful in figuring out a fix. 
 
-**NEW: Show what Apps, Ebooks, and Mobile Profiles are scoped to which User Groups
+**NEW:** Show what Apps, Ebooks, and Mobile Profiles are scoped to which User Groups
 (Does not show LDAP users, limitations or exclusions, this can be added if requested. Does not work for MacOS Profiles and Policies due to a lack of an API endpoint, details in the warning.)
       
-:warning:**Warning!! The API endpoint for MacOS (computer) policies and profiles for user group searches is non-existent. The only search that works for user's scoped searches is for MacOS profiles and for Mac Apps, it does not work for users scoped to policies and only pulls one user group for profiles. A product issue has been filed and if the endpoint is fixed this program will be updated. As a side note all iOS (mobile) searches work great!
+**Warning!!** The API endpoint for MacOS (computer) policies and profiles for user group searches is non-existent. The only search that works for user's scoped searches is for MacOS profiles and for Mac Apps, it does not work for users scoped to policies and only pulls one user group for profiles. A product issue has been filed and if the endpoint is fixed this program will be updated. As a side note all iOS (mobile) searches work great!
 
-Note: Any Device group search takes a bit of time and a straight scope report is a lot quicker. On my test cloud instance, the Group Searches take about a 1 minute each. In larger environments it could take a while. It is a steady stream of (non-concurrent) API calls that can vary in size for data returned, however the largest data stream return I have seen is 1 MB. Which should be very manageable in most environments. The ability to search only specific device group names would break up calls for larger environments if needed. So let me know! 
+**Note:** Any Device group search takes a bit of time and a straight scope report is a lot quicker. On my test cloud instance, the Group Searches take about a 1 minute each. In larger environments it could take a while. It is a steady stream of (non-concurrent) API calls that can vary in size for data returned, however the largest data stream return I have seen is 1 MB. Which should be very manageable in most environments. The ability to search only specific device group names would break up calls for larger environments if needed. So let me know! 
 
 Running directly on the same server as Jamf Pro would decrease network traffic and would already have all the Java needed. 
 
@@ -37,9 +37,9 @@ Running directly on the same server as Jamf Pro would decrease network traffic a
 
 Requirements: JDK and JRE (Written in version 1.8) Preliminary testing in Java 9 showed no issues.
 
-**NEW: No Java needed if you use the Mac APP
+**NEW: No Java needed if you use the Mac APP**
 
-*****To Launch:*****
+***To Launch:***
 
 -Windows: Download Windows version and run the Start_Windows.bat or go to /dist/MobileDeviceTool.jar and double click.
 
@@ -59,7 +59,7 @@ Requirements: JDK and JRE (Written in version 1.8) Preliminary testing in Java 9
 
 EXAMPLE: java -jar '/home/jamfuser/TheScopeReport/dist/TheScopeReport.jar'....Has not been tested much in linux, however if you have the most recent versions of the JRE and JDK then it should run fine. It does not launch correctly if you double click (without a jar launcher) on it. It needs to be run using java -jar from terminal. It does require a GUI. 
 
-The different versions are for ease of launching outside of using the standalone app. They are all the same if you go to /dist and use java -jar or a Jar launcher to run the .jar
+The different versions are for ease of launching outside of using the standalone app. They are all the same if you go to /dist and use java -jar or a Jar Launcher to run the .jar
 
 -----------------------------------------------------------------------------------------------------
 
@@ -67,7 +67,8 @@ If the demand is there this could easily be converted to a gui-less app. So, let
 
 Any suggestions or ideas for functionality are welcomed!
 
-Since the output is CSV we can open the file produced in a text editor or in Excel (recommended). It does size the columns when imported into Excel. If you do not want to manually adjust the columns size then one option is to use the method shown on this site: [Import .csv guide](https://www.hesa.ac.uk/support/user-guides/import-csv)
+Since the output is .CSV we can open the file produced in a text editor or in Excel (recommended). It does look better in Excel. 
+It does not size the columns unless imported into Excel. If you do not want to manually adjust the columns size then one option is to use the method shown on this site: [Import .csv guide](https://www.hesa.ac.uk/support/user-guides/import-csv)
 
 [MIT license](https://github.com/zdorow/TheScopeReport/blob/master/Resources/LICENSE.txt)
 
