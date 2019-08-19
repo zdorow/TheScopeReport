@@ -15,8 +15,8 @@ Currently it runs a full scope report, leaving out blank fields, for the followi
 - Mac Applications
 - Mac Configuration Profiles
 - Ebooks
-- Show what is scoped to Mobile Device Groups (Does not show limitations or exclusions, this can be added if requested)
-- Show what is scoped to Computer Device Groups (Does not show limitations or exclusions, this can be added if requested)
+- Show what is scoped to Mobile Device Groups (Does not show limitations or exclusions)
+- Show what is scoped to Computer Device Groups (Does not show limitations or exclusions)
 
 Features: Handy Dandy Progress bar!
 
@@ -27,7 +27,7 @@ Features: Handy Dandy Progress bar!
 ***NEW:*** Show what Apps, Ebooks, and Mobile Profiles are scoped to which User Groups
 (Does not show LDAP users, limitations or exclusions, this can be added if requested. Does not work for MacOS Profiles and Policies due to a lack of an API endpoint, details in the warning.)
       
-***Warning!!*** The API endpoint for MacOS (computer) policies and profiles for user group searches is non-existent. The only search that works for user's scoped searches is for MacOS profiles and for Mac Apps, it does not work for users scoped to policies and only pulls one user group for profiles. A product issue has been filed and if the endpoint is fixed this program will be updated. As a side note all iOS (mobile) searches work great!
+***Warning!!*** The API endpoint for MacOS (computer) policies and profiles does not report user groups limitatons and exclusions properly. The only search that works for user's scoped searches is for MacOS profiles and for Mac Apps, it does not work for users scoped to policies and only pulls one user group for profiles. A product issue has been filed and if the endpoint is fixed this program will be updated. As a side note all iOS (mobile) searches work great!
 
 **Note:** Any Device group search takes a bit of time and a straight scope report is a lot quicker. On my test cloud instance, the Group Searches take about a 1 minute each. In larger environments it could take a while. It is a steady stream of (non-concurrent) API calls that can vary in size for data returned, however the largest data stream return I have seen is 1 MB. Which should be very manageable in most environments. The ability to search only specific device group names would break up calls for larger environments if needed. So let me know! 
 
