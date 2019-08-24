@@ -8,24 +8,25 @@ The need it is fulfilling:
 
  - The feature request for checking what is scoped to a device or computer group without painstakingly searching through the items or digging up a lengthy MySQL query. 
 
-Currently it runs a full scope report, leaving out blank fields, for the following Jamf Pro categories: 
+Currently it runs a full scope report and deployment method, leaving out blank fields, for the following Jamf Pro categories: 
 - Policies
 - Mobile Applications
 - Mobile Configuration Profiles
 - Mac Applications
 - Mac Configuration Profiles
 - Ebooks
-- Show what is scoped to Mobile Device Groups (Does not show limitations or exclusions)
-- Show what is scoped to Computer Device Groups (Does not show limitations or exclusions)
+- Show what is scoped to Mobile Device Groups (Does not show limitations or exclusions or deployment method)
+- Show what is scoped to Computer Device Groups (Does not show limitations or exclusions or deployment method)
 
 Features: Handy Dandy Progress bar!
 
 ***NEW: No Java needed if you use the Mac App***
 
-***NEW:*** ERROR HANDLING! It will now tell you when you have the URL or the username/password incorrect. If you see the "Please file an issue error" please feel free to file an issue. Including the search you were performing and any data for recreation would be helpful in figuring out a fix. 
+***NEW:*** ERROR HANDLING! It will now tell you when you have the hostname, URL or the username/password incorrect. If you see the "Please file an issue error" please feel free to file an issue. Including the search you were performing and any data for recreation would be helpful in figuring out a fix. 
 
-***NEW:*** Show what Apps, Ebooks, and Mobile Profiles are scoped to which User Groups
-(Does not show LDAP users, limitations or exclusions, this can be added if requested. Does not work for MacOS Profiles and Policies due to a lack of an API endpoint, details in the warning.)
+***NEW:*** Show Distribution Methods for apps, profiles and show Policy triggers!
+
+***NEW:*** Pick your file path!
       
 ***Warning!!*** The API endpoint for MacOS (computer) policies and profiles does not report user groups limitatons and exclusions properly. The only search that works for user's scoped searches is for MacOS profiles and for Mac Apps, it does not work for users scoped to policies and only pulls one user group for profiles. A product issue has been filed and if the endpoint is fixed this program will be updated. As a side note all iOS (mobile) searches work great!
 
@@ -35,7 +36,7 @@ Running directly on the same server as Jamf Pro would decrease network traffic a
 
 ----------------------------------------------------------------------------------------------------
 
-Requirements: JDK and JRE (Written in version 1.8) Preliminary testing in Java 9 showed no issues.
+Requirements: JRE 1.8 < but > 11 (Written in version 1.8) Preliminary testing in Java 9 showed no issues, however Java 11 removed Javafx from the default library so use the mac app if you are not wanting to use that older version of Java or install JavaFX 11
 
 ***NEW: No Java needed if you use the Mac APP***
 
@@ -57,7 +58,7 @@ Requirements: JDK and JRE (Written in version 1.8) Preliminary testing in Java 9
 
 [Linux Download](TheScopeReport_Linux.zip)
 
-EXAMPLE: java -jar '/home/jamfuser/TheScopeReport/dist/TheScopeReport.jar'....Has not been tested much in linux, however if you have the most recent versions of the JRE and JDK then it should run fine. It does not launch correctly if you double click (without a jar launcher) on it. It needs to be run using java -jar from terminal. It does require a GUI. 
+EXAMPLE: java -jar '/home/jamfuser/TheScopeReport/dist/TheScopeReport.jar'....Has not been tested much in linux, however if you have the most recent versions of the JRE then it should run fine. It does not launch correctly if you double click (without a jar launcher) on it. It needs to be run using java -jar from terminal. It does require a GUI. 
 
 The different versions are for ease of launching outside of using the standalone app. They are all the same if you go to /dist and use java -jar or a Jar Launcher to run the .jar
 
