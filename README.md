@@ -1,3 +1,5 @@
+There is a more frequently updated project that can be found here: https://github.com/BIG-RAT/Object-Info
+
 # TheScopeReport![logo](Resources/Scope.png)
 
 The Scope Report is a Java program that uses Jamf Pro API calls to collect and organize specific information about how everything is scoped in your Jamf Pro environment. It can be run from any computer that can access Jamf Pro from their web browser and any user with  at least read permission. It makes the .csv file inside the folder it was run in so it is easy to import wherever desired.
